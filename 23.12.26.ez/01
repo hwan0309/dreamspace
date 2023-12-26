@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>
+                html 연습
+            </title>
+            <meta name="decription" content="연습용 홈페이지">
+        </head>
+        <body>
+    <h1>이것은 제목 입니다.</h1>
+    <p>이것은 내용 입니다.</p>
+    <p>라이브 서버 테스트<br>
+        라이브 서버 테스트2<br>
+        라이브 서버 테스트3
+    </p>
+        </body>
+</html>
