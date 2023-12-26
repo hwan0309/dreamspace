@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1차정리</h1>
+    <p title="링크하는 거">링크</p>
+    
+    <p>독타입(doctype)은 <a href="http://naver.com">네이버</a> 문서의 맨 처음에 위치하여 html의 버전을 선언한다.</p>
+    <p>head요소는 실제로 보이진 않지만 페이지의 중요한 정보를 담고있다.</p>
+    <p>head요소에 담긴 정보들은 검색엔진, 스크린 리더 등에서 활용된다.</p>
+    <p>title요소는 페이지의 제목을 나타내며, 브라우저 탭에 노출된다.<br>
+        접근성을 위해 특수문자 사용은 자제해야한다.
+    </p>
+    <p>meta Decription은 페이지의 소개 내용으로 주로 검색 엔진에서 노출된다.</p>
+</body>
+</html>
