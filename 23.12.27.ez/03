@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str1 = "Do It";
+        const str2 = "Java Script";
+         document.write(str1+" " +str2);
+
+         const str3 = 100;
+         const str4 = 200;
+         document.write(str3+str4);
+         /*
+html 태그에
+do it
+javascript
+합쳐서 출력
+
+변수1 "100"
+변수2 "200"
+합쳐서 출력
+*/
+    </script>
+
+</body>
+</html>
