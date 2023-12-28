@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+
+    <h1>떠든사람</h1>
+    <ol>
+        <li>권유림</li>
+        <li>류제욱</li>
+        <li>안예선</li>
+        <li>정소진</li>
+        <li>조은경</li>
+    </ol>
+
+    <script>
+        let name = prompt("이름을 입력하세요");
+        document.write(name + "님 환영합니다");
+        let str = "<h1>늦게들어온 사람</h1>";
+        str = str + "<li>권유진</li>";
+        str += "<li>류제욱</li>";
+        str += "<li>안에선</li>";
+        str += "<li>정소진</li>";
+        str += "<li>조은경</li>";
+        str += "</ol>";
+        document.write(str);
+        
+        /* 
+        document.write()
+        alert();
+        prompt(); 사용자가 텍스트를 입력할 수 있는 창
+        confirm(); 사용자가 yes or no 선택할 수 있는 창
+        */
+</script>
+
+</body>
+
+</html>
