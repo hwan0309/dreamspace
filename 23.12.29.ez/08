@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mon = prompt("지금 몇 월입니까", "0");
+        if(mon >=3 && mon<=8){
+            documnet.write("꽃 피고 새우는 봄인네요");
+       }else if(mon >= 6 && mon <= 8){
+          documnet.write("바닷가로 가기 좋은 여름이네요");
+}else if (mon >=9 && mon<=11){
+    documnet.write("독서의 계절 가을이네요");
+}else{
+    documnet.write("스키타기 좋은 겨울이네요");
+}
+    </script>
+</body>
+</html>
