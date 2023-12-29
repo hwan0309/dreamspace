@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+<script>
+  var price1=3000;
+var price2=5000;
+var price3=500000;
+var total = price1 + price2 + price3;
+var result = total > 1000 ? total - 10000 +"원 초과" : "돈 관리를 잘 했습니다.!";
+document.write(result);
+</script>
+</body>
+</html>
