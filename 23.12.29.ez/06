@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const id="guest";
+    const pass="1234";
+
+    const uid = prompt("아이디를 입력하세요", "");
+    const upass = prompt("비밀번호를 입력하세요.", "");
+    //if(id==uid&& pass==upass);
+    //아이디검증
+    if(uid==id){
+        //같았을때 실행문
+        if(upass==pass){
+            document.write("환영합니다", "님");
+            //비밀번호 까지 같아서 정상 로그인
+        }else{
+            alert("비밀번호가 틀림");
+            location.reload();
+            document.write("x");
+        }
+    }else{
+        alert("아이디가 틀림");
+        location.reload();
+        document.write("x");
+    }
+           </script>
+</body>
+</html>
