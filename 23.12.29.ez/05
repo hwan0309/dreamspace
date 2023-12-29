@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str ="안녕하세요";
+        if(confirm("정말로 회원을 탈퇴하시겠습니까?")){
+                document.write("잘가");
+                var str = "잘가세요";
+              document.write(str);
+        }
+        document.write(str);
+    </script>
+</body>
+</html>
