@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+        let fourth = Number(prompt("4분기에 얼마나 파셨어요?", "0"));
+        //console.log()
+        const avg = (1200 + 1300 + 1000);
+                const msg1 ="판매량이 평균 이상입니다.";
+        const msg2 ="판매량이 평균 미달입니다.";
+let res = (fourth >= avg)? msg1 : msg2;
+document.write(res);
+   </script>
+</body>
+</html>
