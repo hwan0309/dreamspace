@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .blue{
+            color:blue;
+        }
+        .red{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<p class = "blue">텍스트</p>
+<p class = "red">텍스트</p>
+
+
+
+
+
+    <script>
+let a=1;
+while(a<20) {
+    if (a%3==0){
+    count.write(red);
+    } else if(a%2==0) {
+        count.write(blue);
+        console.log(a);
+    }
+}
+{a++
+}
+    </script>
+</body>
+</html>
