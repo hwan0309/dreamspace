@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>제목</title>
+    </head>
+    <body>
+    <!-- <h1>제목</h1>
+    <h2>제목</h2>
+    <h3>제목</h3>
+    <h4>제목</h4>
+    <h5>제목</h5>
+    <h6>제목</h6>
+    <p>문단을 나타낸느 태그</p>
+     <pre>
+        정
+            형
+                화
+                    된
+                        문
+                             단</pre>
+    <a href="../23.12.29/note/23.12.29.j.s.txt" target="_blank">exhtml 로 이동</a>
+    <a href="/23.12.29/ex.html">ex.html로 이동</a>
+    <br /> <br>
+    <hr /> <hr>
+    <img src="../23.12.29/images/360_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg" width="300" alt="순대국밥"/>
+        <ol>
+            <li>asdf</li>
+        </ol>
+
+        <ul>
+            <li>asdf</li>
+        </ul>
+
+        <dl>
+            <dt>coffe  </dt>
+            <dd>black hot drink</dd>
+        </dl>
+
+        <div>
+            이것은 의미없이 쓰는 태그
+        </div>
+        <span> 이것은 의미없이 쓰는 태그</span> -->
+<form action=""method="get">
+    <div>
+    <label for="userid">한줄텍스트</label>
+    <input type="text" id="userid" name="query" value="" placeholder="아이디">
+</div>
+<div>
+<lable for="userpass">비밀번호</lable>
+<input type="password" id="userpass" name="userpass" value=""placeholder="비밀번호">
+</div>
+<!--
+    버튼의 세가지 용법
+    1.button
+    2.reset
+    3.submit
+-->
+<input type="reset" value="버튼1">
+<button type ="submit"> 버튼2</button>
+<div>
+    <!--다중선택은 multiple라는 옵션을 select에 추가해주면 됨, 보여주는 목록의 크기는 size="0"-->
+    <lable for="cars">선호하는 자동차</lable>
+    <select name="cars" id="cars" size="">
+        <option value="volvo">volvo</option>
+        <option value="kia"selected>kia</option>
+        <option value="hyundai">hyundai</option>
+    </select>
+</div>
+<div>
+    Q. 선생님의 몸무게는?<br>
+    <label><input type="radio" name="a" value="50">50kg </label><br>>
+    <label><input type="radio" name="a" value="60">60kg </label><br>>
+    <label><input type="radio" name="a" value="70"checked>70kg </label><br>>
+    <label><input type="radio" name="a" value="80">80kg </label><br>>
+    <label><input type="radio" name="a" value="답없음">답없음 </label><br>>
+</div>
+<div>
+    Q.당신의 취미는?<br>
+    <label><input type="checkbox" name="a" value="운동">운동</label><br>
+    <label><input type="checkbox" name="b" value="독서">독서</label><br>
+    <label><input type="checkbox" name="c" value="싸움">싸움</label><br>
+    <label><input type="checkbox" name="d" value="낮잠">낮잠</label><br>
+    <label><input type="checkbox" name="e" value="캠핑">캠핑</label><br>
+    <label></label>
+</div>
+<div>
+    <input type="file" name="file">
+</div>
+<div>
+    <textarea name="contents"cols="20" rows="10"></textarea>
+</div>
+<button type="submit">버튼</button>
+</form>
+    </body>
+</html>
