@@ -1,0 +1,25 @@
+24.01.02
+html
+
+input type="text"
+input type="password"
+
+input type="button"
+input type="submit"
+input type ="reset"
+
+button type="button"
+
+select > option 선택
+input type ="radio" 선택
+input type="checkbox" true - false
+input type="file" 이미지 첨부
+textarea 본문을 쓸때
+
+환경분석
+
+-거시적 환경분석
+-미시적 환경분석
+
+html,css 대소문자 구분 x (소문자 위주 사용)
+java script,java 대소문자 구분o
