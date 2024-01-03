@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+table--테이블 표를 만들때 처음 선언한다.
+tr( table row) = 행
+td (table data) = 행의 내용(셀)
+th (table heading) = 열의 제목(셀)
+caption = 표의 제목
+thead =머리글 그룹
+tfoot = 꼬리글 그룹
+tbody = 본문 그룹
+colgroup > col(스스로 닫는 테그) = 테이블 각 셀의크기, 스타일을 지정할 때 사용
+colspan = 가로셀 병합
+rowspan = 세로셀 병합
+    -->
+    
+ <table border= "1">
+    <caption>우리맴버</caption>
+    <colgroup>
+    <col width="100">
+     <col width="90">
+    </colgroup>
+    <thead>
+    <tr>
+        <th>name</th>
+        <th colspan="2">old</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td rowspan="2">지환</td>
+        <td>100</td>
+        <td>한국</td>
+    </tr>
+</tbody>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table> 
+
+<table border = "1" width = "500">
+<tr>
+    <caption>선유도 총괄 요금표</caption>
+        <thead>
+    <th rowspan = "2">구분</th>
+    <th colspan = "3">선유도 총괄 요금표</th>
+</tr>
+<tr>
+    <th>선박요금</th>
+    <th>공원입장료</th>
+    <th>터미널이용료</th>
+</tr>
+    </thead>
+    <tr>
+    <th>성인</th>
+    <td>2,000원</td>
+    <td>1,000원</td>
+    <td>500원</td>
+</tr>
+<tr>
+    <th>중,고등학생</th>
+    <td>2,000원</td>
+    <td>800원</td>
+    <td>500원</td>
+</tr>
+<tr>
+    <th>초등학생</th>
+    <td>700원</td>
+    <td>500원</td>
+    <td>300원</td>
+</tr>
+<tr>
+         <tfoop>
+    <td colspan="4">*이륜차(오토바이,자전거) 및 화물차량 요금은 별도문의</td>
+        </tfoot>
+</tr>
+</table>
+</body>
+</html>
