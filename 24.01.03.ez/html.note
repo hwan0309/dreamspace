@@ -1,0 +1,17 @@
+24.01.03
+html
+table--테이블 표를 만들때 처음 선언한다.
+tr( table row) = 행
+td (table data) = 행의 내용(셀)
+th (table heading) = 열의 제목(셀)
+caption = 표의 제목
+thead =머리글 그룹
+tfoot = 꼬리글 그룹
+tbody = 본문 그룹
+colgroup > col(스스로 닫는 테그) = 
+테이블 각 셀의크기, 스타일을 지정할 때 사용
+
+html 출력하기 위해선 document.write();
+
+j.s 출력하기 위해선 console.log();
+
