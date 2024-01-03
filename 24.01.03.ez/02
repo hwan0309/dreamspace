@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #para1 {
+        text : center;
+        color: green;
+    }
+    p {
+        text-align: center;
+        color:purple;
+     }
+     h1 {
+        text-align:center;
+        color:blue
+     }
+</style>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p id ="para1"> Hello World!</p>
+    <P>style sheet1</P>
+        <p>style sheet3</p>
+      
+    
+</body>
+</html>
