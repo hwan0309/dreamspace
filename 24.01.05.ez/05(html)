@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box; }
+        body{
+            margin:20px;
+            color:blue;
+            background-color:#efefef;
+     }
+     /* 문서 정렬 옵션 left, right, center, justify(양쪽맞춤) */
+      .box{
+            width:200px;
+            height:200px;
+            border:1px solid #fff;
+            margin:20px auto;
+            text-align:center;
+            vertical-align:middle; 
+            /*inline에서만 적용이 됨 block에선x, 세로정렬에선 사용불가*/
+        }
+        a{
+            text-decoration:none;
+        }
+        
+        .letter{
+            width:200px;
+                letter-spacing:-2px;
+                line-height:1.2;
+                text-indent:30px;
+        }
+        .word{
+            width:200px;
+            word-spacing:10px;
+            line-height:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span calss="span-box">adfg</span>
+       <p> <a href="https://naver.com">네이버로이동</a></p>
+       <p> <a href="https://nate.com">네이트로이동</a></p>
+
+    </div>
+    <p class="letter">모든 국민은 주거의 자유를 침해받지 아니한다. 주거에 대한 압수나 수색을 할 때에는 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다.</p>
+
+    <p class="word">모든 국민은 주거의 자유를 침해받지 아니한다. 주거에 대한 압수나 수색을 할 때에는 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다.</p>
+    dd
+
+</body>
+</html>
