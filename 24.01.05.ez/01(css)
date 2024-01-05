@@ -1,0 +1,21 @@
+.box {
+    width: 300px; 
+    height:300px;
+    border: 1px solid #333;
+    /* background-color:  rgba(127,255,212,0.2);  */
+    /* opacity:0.5;  문서 자체 투명도*/
+    /* background-image:url("../imges/다운로드.png");
+    background-repeat:no-repeat; */
+    /* repeat, no-repeat, reteat-x, repeat-y, ingerit*/
+    /* background-position: center; /* x축부터 y축으로*/
+    /* background-attachment: scroll;  */ 
+    /*scroll(기본), fixed(전체 페이지에 고정), local(), inherit*/
+    background:rgba(127,255,212,0.3) url("../imges/다운로드.png") no-repeat center fixed;
+    background-size:10%;
+    overflow-y:auto;  /*scroll, auto*/
+     }
+     .box2 {
+        background:aquamarine url("../imges/free-icon-soccer-dribbling-12542077.png") center fixed;
+        background-size: 0%;
+        
+     }
