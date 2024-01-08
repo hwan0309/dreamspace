@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.a{
+    text-decoration:none;
+    color:black;
+    margin-left:5px;
+    margin-right:5px;
+    padding:5px 10px;
+}
+.b{
+    background-color: red;
+    color:white;
+}
+.b:hover{
+    background-color: green;
+    color:yellow;
+    box-shadow:-2px -2px 5px rgba(0,0,0,.3);
+}
+.c{
+    border:1px solid green;
+
+
+}
+.c:hover{
+    background-color:green;
+    color:white;
+}
+.d:hover{
+    text-decoration:underline;
+    color:pink;
+}
+    </style>
+</head>
+<body>
+     <a href="#" class="a">링크</a>
+     <a href="#" class="b">링크</a>
+     <a href="#" class="c">링크</a>
+     <a href="#" class="d">링크</a>
+</body>
+</html>
