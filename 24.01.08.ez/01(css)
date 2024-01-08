@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        body{
+            font-family: cursive,"Times New Roman",Arial,Helvetica,Sans-serif;
+        }
+        p{ 
+        font-style: italic;
+        }
+        .b{
+            font-weight:bolder;
+            /* 200m, 300(light), 400(normal), 500, 600, 700(bold), 800(bolder) */
+        }
+        /* font-variant: small-caps; normal, small-caps */
+        .wspace{
+            /* normal, nowrap(줄바꿈 금지) 
+            pre(html의 pre와 같음 줄바꿈, 띄어쓰기 가능)
+            pre-line(pre와 같지만 줄바꿈이 허용됨, 띄어쓰기는 불가능)
+            pre-wrap(줄바꿈 허용, 띄어쓰기 됨) 
+            inhert */
+            width:300px;
+            border:1px solid #333;
+            padding:30px;
+            white-space:pre-wrap;
+                 
+        }
+        .board{
+            width:300px;
+            border:1px solid #333;
+            padding:30px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            /*넘치는부분 안 보이게, 줄바꿈을 허용하지 않게, text-overflow:ellipsis;*/
+        }
+        i.fa-truck-fast{
+            font-size:40px;
+            color:#888;
+        }
+        
+        .sns-box{
+            margin:40px auto;
+            padding:30px;
+            width:200px;
+            border:1px solid #ddd;
+            background:#efefef;
+            text-align: center;
+            box-shadow: 5px 5px 15px 0 rgba(0,0,0,.3);
+        }
+        .sns-box span{
+            display:inline-block;
+            width:35px;
+            height:35px;
+            border:1px solid #999;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 50%;
+            line-height:35px;
+        }
+        .facebook i{
+            color:#1877f2;
+            text-shadow: 0 0 5px rhba(0, 0, 0, 1);
+            /* text-shadow: x축 y축 퍼지는 정도 색상 
+            x 축 y축 퍼지는 정도 색상*/
+        }
+        .instagram i{
+            color:#c13584;
+        }
+        .wt{
+            color:#fff;
+            text-shadow:1px 0 0 #333,
+                        0 1px 0 #333,
+                       -1px 0 0 #333,
+                       0px 0 1 #333;
+        }   
+    </style>
+</head>
+<body>
+
+   <!-- 폰트의 종류
+   sans-serif (꺽어지지 않은 글씨체 고딕체)
+   serif(바탕체)
+   monospace(타이핑체) (가로폭이 같음)
+    cursive(필기체)
+    fatasy() 
+    font-family(다양한 폰트 설정가능)
+
+    font-style: 이텔릭체
+    글씨체를 두껍게 하는 방법 <strong>,
+-->
+<i></i>
+   <h1>Lorem ipsum dolor sit amet.</h1>
+    <i>이텔리체</i>
+    <p class="b">글씨체를 두껍게 하는방법</p>
+    <strong>글씨체를 두껍게 하는방법</strong>
+    <p class="wspace">시
+        남으로 창을   내겠소.  남으로 창을 내겠소.  남으로 창을 내겠소.  남으로 창을 내겠소. 
+    </p>
+    <p class="bord"> 남으로 창을   내겠소.  남으로 창을 내겠소.  남으로 창을 내겠소.   </p>
+    
+    <i class="fa-thin fa-truck-fast"></i>
+
+    <div class="sns-box">
+        <span class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </span>
+                <span class="instagram">
+            <i class="fa-brands fa-square-instagram"></i>  
+        </span>
+              </div>
+
+</body>
+
+</html>
