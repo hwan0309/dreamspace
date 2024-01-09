@@ -1,0 +1,51 @@
+24.01.09
+git
+1. git branch main2 --> 메인2제작
+
+2.git branch --> 현재목록 보여줌
+*main --> 현재 위치한 브런치
+main2
+
+3.git checkout main2 -->메인2브런치로 이
+
+4.git add.
+git commit-m -->메세지
+
+5.git log git status
+
+reset: 원하는 시점으로 되돌아 간 후 이후 내역을 모두 지운다.
+revert: 되돌리기 원하는 시점의 커밋을 거꾸로 실행한다.
+VI에디터 명령어
+
+입력시작 : i   명령어 입력모드에서 텍스트 입력모드로 전환
+입력종료 : esc  텍스트 입력모드로 전환
+저장없이 종료 : :q
+저장없이 강제 종료 :  :q!
+저장하고 종료 : :wq
+위로스크롤 : k
+아래로스크롤 : j
+
+.gitignore (파일) 사용법
+최상위 폴더:   /파일이름.확장자
+확장자가 .exe 모든파일 :  *.exe
+특별히 지정할 파일 : 파일이름.확장자
+Git init
+Git status  - 상황확인
+Fatal: detected dubious ownership ….  에러가 출력되면 
+git config --global --add safe.directory “디렉토리명” 
+
+Git add “파일명“  -- 폴더내의 모든 파일을 등록 git add .
+(새로운 파일의 추가, 삭제 없을때는 git add 생략하고 git commit –am ＂메시지＂
+Git commit 
+Git으로 관리하지 않는 파일  : .gitingnore
+
+
+git최초설정
+git config --global  user.name “본인이름”
+git config --global user.email “본인이메일”
+확인 
+ git config --global  user.name
+git config --global user.email
+기본 브랜치명 설정
+Git config --global init.defaultBranch main
+
