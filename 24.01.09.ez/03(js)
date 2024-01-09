@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr_1=["사당", "교대", "방배", "강남"];
+        let arr_2=["신사", "압구정", "옥수"];
+
+        let arr_3 = [10, 23, 1, 8, 11];
+        let arr_4 = ["java", "spring", "eclipes", "nodejs"];
+
+        let rs = arr_1.join("_");
+        document.write(rs);
+        console.log(rs);
+        console.log(arr_1);
+
+        rs = arr_1.concat(arr_2);
+        console.log(rs);
+
+        rs = arr_2.concat(arr_1);
+        console.log(rs);
+
+        rs = arr_1.slice(1,2);
+        console.log(rs);
+
+        rs = arr_3.sort(function(a,b){
+            return a-b;
+        });
+       
+        
+        console.log(rs);
+
+        arr_2.reverse();
+        console.log(arr_2);
+
+        
+
+    </script>
+</body>
+</html>
