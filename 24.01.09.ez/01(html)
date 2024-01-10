@@ -1,38 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Wedding</title>
-    <link rel="stylesheet" href="wedding.css"></link>
-</head>
-<body>
-   <div class ="hero">
-    <div class="container clearfix">
-        <div class="hero-left"></div>
-                <div class="hero-logo">
-            <h1> My Wedding's</h1>
-            <p>wedding photopraphy</p>
-        </div>
-        <div class="hero-right"></div>
-     </div> <!---/container-->
-
- <nav class="container">
-<a href="#">history</a>
-<a href="#">offer</a>
-<a href="#">options</a>
-<a href="#">about me</a>
-<a href="#">contact</a>
- </nav>
-
- <h1 class="title">Sensitive wedding photopraphy</h1>
-     </div>
-<div class="container text-center">
-    <div class="flbox"></div>
-    <h2 class="unna">Some wedding stories of my couples</h2>
-
-</div><!--hero-->
-<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
