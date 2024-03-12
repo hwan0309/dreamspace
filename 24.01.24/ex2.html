@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .accordian{
+            background:#efefef;
+            color:#333;
+            cursor:pointer;
+            padding:20px;
+            width:400px;
+            border:none;
+            border-bottom:1px dashed #999;
+            text-align:left;
+            font-weight:bold;
+            font-size:16px;
+            transition:all 0.5s;
+        }
+        .active, .accordian:hover{
+            background:#333;
+            color:#fff;
+        }
+        .accordian:after{
+            content:"+";
+            color:#333;
+            font-weight:bold;
+            float:right;
+            margin-left:5px;
+        }
+        .active::after{
+            content:"-";
+        }
+        .panel{
+            padding: 0 18px;
+            width:400px;
+            max-height:0;
+            font-size:14px;
+            background:#fff;
+            overflow:hidden;
+            transition:all 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <button class="accordian">첫 번째 제목입니다.</button>
+    <div class="panel">
+        <p>국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+    </div>
+    <button class="accordian">두 번째 제목입니다.</button>
+    <div class="panel">
+        <p>국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+    </div>
+    <button class="accordian">세 번째 제목입니다.</button>
+    <div class="panel">
+        <p>국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+    </div>
+    <script>
+        //getElementByClassName는 배열로 저장  acc[0] acc[1] acc[2]
+       const acc = document.getElementsByClassName("accordian");
+       
+       for(let i =0; i < acc.length; i++){
+        //이벤트 일어난 상황을 확인하는 것 addEvenListener
+        acc[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            //현재 엘리먼트의 형제태그
+            let panel = this.nextElementSibling;
+            //javascript max-height를 낙타표기법으로 사용
+            if(panel.style.maxHeight){
+                paneㅣ.style.maxHeight = null;
+            }else{
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        })
+    };
+       
+    </script>
+</body>
+</html>

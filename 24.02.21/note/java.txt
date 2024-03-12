@@ -1,0 +1,36 @@
+24.02.21
+java
+List String 리스트 인터페이스
+words = List("Apple", "Bat", "Cat");
+words = [Apple, Bat, Cat]
+
+words.indexOf("Cat") 
+=> 2 (리스트에 있게되면 배열 번호 출력)
+
+words.indexOf("Dog")
+=> -1 (리스트에 없는 문자면 -1출력)
+
+wordsArrayList.add(2, "Ball"); 기존 배열에 인덱스 번호, 문구 추가
+=>wordsArrayList [Apple, Bat, Ball, Cat]
+
+wordsArrayList.set(2, "Dog"); 기존 배열에 인덱스 번호, 문구 추가하면 
+기존 배열 삭제 후 삽입
+=>wordsArrayList [Apple, Bat, Dog, Cat]
+
+wordsArrayList.remove(2); 기존 배열에서 선택한 인덱스 번호 삭제
+=>wordsArrayList[Apple, Bat, Cat]
+
+package (encapuslation)캡슐화
+public 어떠한 패키지에서도 접근 가능 (클래스, 필드, 생성자, 메소드)
+protected 같은 패키지이거나 하위 클래스에서만 접근 가능 (필드, 생성자, 메소드)
+default 같은 패키지에서 접근 가능 (클래스, 필드, 생성자, 메소드)
+private 클래스 내부 (필드, 생성자, 메소드)
+
+getter / setter
+필드값이 객체 외부에서 사용하기에 부적절한 경우, 
+적절한 값으로 변환해서 리턴 할 수 있는 메소드
+
+데이터를 검증해서 유효한 값만 필드에 저장하는 메소드
+
+getter/setter 메소드 자동생성
+source - Generate Getters and Setters 

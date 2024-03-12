@@ -1,0 +1,2 @@
+module next0101 {
+}

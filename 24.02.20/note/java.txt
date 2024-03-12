@@ -1,0 +1,34 @@
+24.02.20
+java
+
+String
+String 과 number을 변수로 넣게되면 "1" + 23 = "123"
+number과 number을 변수로 넣게되면 1 + 23 = 123
+
+System.out.println("Value is" + (20 + 20)); = Value is 40
+괄호를 넣어 우선순위를 먼저 시켜주기에 연산 먼저
+
+System.out.println("Value is" + 20 + 20); = Value is 2020
+
+auto boxing
+Integer seven = new integer(7); 를 단순하게 사용 가능
+Integer seven = 7;
+
+API
+import java.time.LocalDate 
+선언 후 자바에 imports를 넣어주어 현재 데이터를 선언가능
+
+LocalDate now = LocalDate.now();
+2024-02-20
+
+/정적메소드/
+메소드 앞에 static가 붙은 메소드이다.
+객체 생성 없이 호출이 가능한 메소드
+
+/인스턴스 메소드/
+인스턴스 생성 후, '참조 변수.메소드 명()'으로 호출한다.
+인스턴스 멤버와 관련된 작업을 한다.
+메소드 내에서 인스턴스 변수를 사용할 수 있다.
+인스턴스 변수를 이용해서 작업을 하므로
+ 변수의 묶음인 객체를 생성해야 인스턴스 메소드를 호출할 수 있다.
+

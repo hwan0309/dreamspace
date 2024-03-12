@@ -1,0 +1,23 @@
+.mainbox{
+background-color: rgb(168, 218, 93);
+border:0.5px solid black;
+width:1000px;
+position:fixed;
+
+}
+.mainbox_2{
+   background-color: rgb(90, 236, 90);
+   border:0.5px solid black;
+   width:200px;
+
+
+}
+.carlavan4{
+    background-color:rgb(122, 20, 122);
+    position:absolute;
+}
+.mainbox_3{
+    background-color: rgb(90, 236, 90);
+    border:0.5px solid black;
+    width:500px;
+}

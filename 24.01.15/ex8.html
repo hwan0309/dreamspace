@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .button1{
+            width:200px;
+            height:50px;
+        }
+        .button2{
+            width:200px;
+            height:50px;
+        }
+        .container{
+            width:500px;
+            height:500px;
+            background:yellowgreen;
+        }
+        .box1{
+            border-radius: 10;
+          
+          
+        
+           
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div class="container"></div>
+    <div class="box1">
+        <img src="." alt="1"></div>
+        
+    <div class="box2">2</div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+
+    <button onclick="changeColor1()">이전</button>
+    <button onclick="changeColor2()">다음</button>
+    <script>
+        let count = 0;
+        const colorArr = [box1, box2, box3, box4, box5, box6, box7, box8];
+        document.getElementById("body").style.backgroundColor = "yellow";
+        function changeColor(){
+            count++;
+            if(count >= colorArr.length){
+                count = 0;
+            }
+            document.getElementById("body").style.backgroundColor =  colorArr[count];
+        }
+<script>
+    let onclick 
+</script>
+    
+</body>
+</html>

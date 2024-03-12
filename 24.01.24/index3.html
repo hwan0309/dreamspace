@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="../etc/js/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.btn').click(function(){
+            $('#image').attr('src', '../24.01.24/images/2.png');
+        })
+    })
+</script>
+</head>
+<body>
+    <img id="image" src="../24.01.24/images/1.png" alt="image1">
+    <button onclick="myBtn()">이미지변경</button>
+    <button class="btn">jquery 이미지 변경</button>
+    <script>
+        function myBtn(){
+            alert("이미지를 002로 변경해 주세요");
+            document.getElementById(image2).src="../24.01.24/images/2.png" 
+        }       
+    </script>
+    
+</body>
+</html>

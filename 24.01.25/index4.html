@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="../etc/css/bootstrap.css">
+    <style>
+        [class*=col] {
+            margin-top:30px;           
+        }
+        div.in{
+            min-height:150px;
+            background:#ddd;
+        }
+    </style>   
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Bootstrap!</h1>
+        <p>부트스트렙에 오신걸 환영합니다.</p>
+        <div class="row">
+            <div class="clo-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="in text-primary bg-warning"></div>
+                </div>
+            <div class="clo-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="bg-info"></div>
+            </div>
+            <div class="clo-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="bg-success"></div>
+            </div>
+            <div class="clo-12 col-md-6 col-xl-4 col-xxl-3">
+                <div class="bg-warning"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid"></div>
+    <script src="../etc/js/popper.min.js"></script>
+    <script src="../etc/js/bootstrap.js"></script>
+</body>
+</html>

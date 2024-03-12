@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+.bar-box{
+    width:40px;
+}
+.bar-box>span{
+    display:block;
+    height:5px;
+    background:#000;
+    margin-bottom: 6px;
+    transition:0.4s
+}
+.click span{
+    transition: all 0.4s;
+}
+.click span:first-child{
+    transform:rotate(-45deg) translate(-5px,11px);
+}
+.click span:nth-child(2){
+    opacity:0;
+}
+.click span:last-child{
+    transform:rotate(45deg) translate(-5px,-11px);
+}
+    </style>
+
+</head>
+<body>
+    <div class="bar-box" 
+    onclick="listClick(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+       
+    </div>
+
+<script>
+    function listClick(e){
+        e.classList.toggle("click");
+    }
+</script>
+    
+</body>
+</html>

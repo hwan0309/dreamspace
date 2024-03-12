@@ -1,0 +1,21 @@
+24.02.23
+DB
+
+제약조건
+NOT NULL	데이터가 NULL값을 받아들이지 않음
+UNIQUE		데이터가 동일한 값을 입력하면 받아들이지 않음
+PRIMARY KEY	기본기(NOT NULL, UNIQUE)
+FOREIGN KEY	외래키 제약조건
+DEFAULT		컬럼내용이 입력되지 않았을 경우 기본값을 입력
+ETC		AUTO_INCREMENT(자동증가)
+CHECK		
+
+BUSINESS_CARD라는 테이블을 만들고 NAME컬럼을 빈값을 허용
+하지 않는 컬럼으로 선언
+
+creat table nusiness_card(
+name varchar(255) not null,
+address varchar(255),
+telephone char(13)
+);
+		

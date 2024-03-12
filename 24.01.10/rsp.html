@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div>
+     <button onclick="onbutton">주먹</button>
+     <button onclick="onbutton">가위</button>
+     <button onclick="onbutton">보</button>
+    </div>
+   
+    <script>
+        let scissors='가위';
+        let rock='바위';
+        let paper='보';
+
+        function onbutton(usergame){
+            let  comgame;
+            let game = math.random();
+
+            if(game<0.33){
+                comgame=scissors;
+            } else if(game>0.66){
+                comgame=rock;
+            } else {
+                comgame=paper;
+            }
+
+            let games= '유저 : '+ usergame + '컴퓨터 : ' + comgame;
+
+            if(usergame === scissors){
+                if(comgame === scissors){
+                    games += "비겼습니다";
+                }else if(comgame === rock){
+                    games+="컴퓨터 승"
+                }else {
+                    games+="유저 승"
+                }
+            }
+                else if(usergame === rock){
+                    if(comgame === rock){
+                        games+= "비겼습니다"
+                    }else if(comgame === scissors){
+                        games+="유저 승"
+                    }else {
+                        games+="컴퓨터 승"
+                    }
+                }
+               else {
+               if(comgame === paper){
+                    games+="비겼습니다"
+                 } else if(comgame === rock){
+                    games+="유저 승"
+                 }else {
+                    games+="컴퓨터 승"
+                 }
+                }
+        
+            alert(games);
+            }
+    
+    </script>
+   
+    
+</body>
+</html>

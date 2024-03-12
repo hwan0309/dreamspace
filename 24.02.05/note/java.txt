@@ -1,0 +1,12 @@
+24.02.05
+java
+
+Java ver.12 화살표로 break구문 가능
+switch(grade)
+case 'A', 'a' -> {
+}
+case 'B', 'b' -> {
+}
+
+
+for문 (초기화식; 조건식; 증감식++)

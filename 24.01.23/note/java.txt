@@ -1,0 +1,30 @@
+24.01.23
+JAVA
+자바특징
+윈도우,맥,리눅스 등 모든 운영체제에서 사용가능
+먼저 객체를 만들고 객체들을 서로 연결해서 더 큰 프로그램을 완성시키는 객체지향
+프로그래밍 oop에 최적화된 언어
+메모리를 자동 정리해 메모리 관리에 용이
+무료로 다운로드해서 사용할 수 있는 오픈소스 라이브러리가 풍부
+
+java se 기본에디션(java standard edition)
+-jvm
+-jdk
+-jre
+java ee 서버 애플리케이션 개발 에디션
+-웹에플리케이션, 웹서버
+-was(web application server)
+
+java mm (micro edition)
+-임베디드, 모바일
+
+java8
+java 11 spring
+java 17 spring boot
+
+환경변수 설정
+시스템변수 - JAVA_HOME  -  java/bin 디렉토리까지 주소
+사용자변수 - %JAVA_HOME%\bin
+
+컴파일 명령
+javac - 파일명

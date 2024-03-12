@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="box"></p>
+    <button onClick="myFunc(1)">카운트를 추가</button>
+    <button onClick="myFunc(0)">카운트를 빼기</button>
+
+    <script>
+        let count= 0;
+        function myFunc(n){
+            if(n){
+                count++;
+            }else{
+                count--;
+            }
+
+       
+        document.getElementById("countbox").innerHTML = count;
+        }
+
+    </script>
+
+    
+</body>
+</html>

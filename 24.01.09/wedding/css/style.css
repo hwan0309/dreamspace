@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{ box-sizing:border-box;}
+body{
+    margin:0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:16px;
+    color:#333;
+}
+.unna{
+    font-family: 'Unna', serif;
+}
+.aurore{
+    font-family: 'La Belle Aurore', cursive;
+}
+.hero{
+    width:100%;
+    height:700px;
+    background:url('../images/main.jpg') no-repeat center;
+    background-size:cover;
+}
+.text-center{
+    text-align:center;
+}
+.container{
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.row{
+    margin-left:-15px;
+    margin-right:-15px;
+}
+.clearfix::after,
+.row::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.hero .container>div{
+    margin-top:30px;
+    border:1px solid #fff;
+}
+.hero .container>.hero-left{
+   float:left; 
+   width:40%;
+   height:125px;
+   border-right:none;
+}
+.hero .container>.hero-logo{
+   float:left;
+   width:20%;
+   height:125px;
+   border:none;
+   text-align:center;
+   color:#fff;
+}
+.hero-logo h1{
+    margin:0;
+    padding-top:20px;
+    font-family: 'La Belle Aurore', cursive;
+}
+.hero-logo p{
+    text-transform: uppercase;
+    font-size:12px;
+    margin:0;
+    padding-top:8px;
+    letter-spacing:1px;
+}
+.hero .container>.hero-right{
+  float:left;  
+  width:40%;
+  height:125px;
+  border-left:none;
+}
+
+/******* navigation **********/
+nav.container{
+    padding-top:30px;
+    text-align:center;
+}
+nav.container a{
+    color:#fff;
+    font-family: 'Unna', serif;
+    font-weight: 700;
+    font-size:14px;
+    letter-spacing:4px;
+    text-transform: uppercase;
+    margin-left:40px;
+    margin-right:40px;
+    text-decoration:none;
+}
+.title{
+    font-family: 'Unna', serif;
+    font-weight: 700; 
+    color:#fff;
+    text-align:center;
+    font-size: 75px;
+    margin-top:270px;
+}
+.flow{
+    width:300px;
+}
+.container>.flbox{
+    background:url(../images/flow2.png) no-repeat center;
+    background-size:cover;
+    width:230px;
+    height:120px;
+    margin:100px auto 20px;
+}
+h2.subtitle{
+    font-size:36px;
+    padding-bottom:40px;
+}
+.col{
+    width:33.333333334%;
+    padding-left:15px;
+    padding-right:15px;
+    float:left;
+}
+.col>div{
+    margin-bottom:30px;
+}
+.box1{
+    height:385px;
+    overflow: hidden;
+    position:relative;
+    cursor:pointer;
+}
+.box2{
+    height:577px;
+    overflow: hidden;
+    position:relative;
+    cursor:pointer;
+}
+
+.col img{
+    height:100%;
+}
+.text-box{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background:rgba(0,0,0,0.5);
+   color:#fff;
+   display:none;
+}
+.box1 .text-box h3{
+    font-size:25px;
+    margin-top:150px;
+}
+.box2 .text-box h3{
+    font-size:25px;
+    margin-top:250px;
+}
+.text-box p{
+    font-size:30px;
+}
+.box2:hover>.text-box,
+.box1:hover>.text-box{
+    display:block;
+}
+.btn{
+    display:block;
+    width:280px;
+    height:50px;
+    text-align:center;
+    text-transform: uppercase;
+    color:white;
+    background:rgb(138,207,154);
+    border-radius:5px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:3px;
+    line-height:50px;
+    margin:30px auto 100px;
+    cursor:pointer;
+    text-decoration:none;
+}
+.btn:hover{
+    background:rgb(109, 172, 124);
+}
+
+/*** section whoami ****/
+section.whoami{
+   background-color:rgb(237, 242, 239);
+   padding-top:50px;
+   padding-bottom:50px;
+}
+.leftbox{
+    width:60%;
+    float:left;
+    position:relative;
+}
+.leftbox img{
+    position:absolute;
+}
+img.aboutme{
+    top:25px;
+}
+img.aboutme2{
+    top: 280px;
+    right:60px;
+    border:15px solid rgb(237, 242, 239);
+    z-index:2;
+}
+.rightbox{
+    width:40%;
+    float:right;
+}
+.rightbox h1{
+    font-size: 36px;
+    line-height:1.5;
+}
+.rightbox p{
+    line-height:1.6;
+}
+.whoami .btn{
+    margin-left:0;
+}
+/* packages
+반응형 정사각형 만드는 공식 */
+.packages-box{
+    width:100%;
+    position:relative;
+}
+.packages-box ::after{
+    content:"";
+    display:block;
+    padding-bottom:100%;
+}
+.inner{
+    position:absolute;
+    width:20%;
+    height:100%;
+    overflow:hidden;
+}
+.inner  img{
+    width:100%;
+    height:auto;
+    
+}

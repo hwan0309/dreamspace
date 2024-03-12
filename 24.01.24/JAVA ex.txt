@@ -1,0 +1,78 @@
+
+//문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.
+class Solution {
+    public String solution(String my_string, int k) {
+        //repeat(반복 문자열 사용하여 k 출력 )
+        return my_string.repeat(k);
+    }
+}
+
+//두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.
+//a + b = c
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+let input = [];
+rl.on('line', function (line) {
+    input = line.split(' ');
+}).on('close', function () {
+      let num1 = input[0];
+    let num2 = input[1];
+     // 문자열과 숫자를 붙여출력할때 + 기호로 붙여주기
+    // input[0]에 전체로 감싸 Number를 주지말고 하나하나 줄것
+    console.log(num1 + ' + ' + num2 + ' = ' + (Number(input[0]) + Number(input[1])));
+});
+
+//두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다. 입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+}).on('line', function (line) {
+    const strArr = line.split(' ')
+    console.log(strArr.join(''))
+})
+
+//문자열 str이 주어집니다. 문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+          String a = sc.next();
+        for(String s : a.split("")){
+            System.out.println(s);
+        }
+    }
+}
+
+//자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 "n is even"을, 홀수이면 "n is odd"를 출력하는 코드를 작성해 보세요.
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(n + " is "+(n % 2 == 0 ? "even" : "odd"));
+    }
+}
+
+//정수 number와 n, m이 주어집니다. number가 n의 배수이면서 m의 배수이면 1을 아니라면 0을 return하도록 solution 함수를 완성해주세요.
+class Solution {
+    public int solution(int number, int n, int m) {
+    return (number % n == 0 && number % m == 0 ? 1 : 0);
+    }
+}
+
+//연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.
+12 ⊕ 3 = 123
+3 ⊕ 12 = 312
+양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a * b 중 더 큰 값을 return하는 solution 함수를 완성해 주세요.
+단, a ⊕ b와 2 * a * b가 같으면 a ⊕ b를 return 합니다.
+class Solution {
+    public int solution(int a, int b) {
+   return Math.max(Integer.parseInt(String.valueOf(a)+String.valueOf(b)),2*a*b);
+    }
+}
+
+//

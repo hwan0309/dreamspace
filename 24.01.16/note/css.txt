@@ -1,0 +1,18 @@
+24.01.16
+css
+alternate 정상재생 - 역방향재생
+alternate-reverse 역방향재생 - 정상재생
+
+animation-timing-function:ease;
+기본값 ease (빠르게 시작하고 천천히 끝남)
+liner (처음부터 끝까지 일정한 속도)
+ease-in (느린시작)
+ease-out(느린 끝)
+ease-in-out(느린시작 - 느린 끝)
+cubic-bezier(n,n,n,n) 값 지정 가능
+
+animation-fill-mode: (애니메이션 시작 부분, 끝 부분에 어떤 스타일 시트를 넣을지)
+none 기본값 (애니메이션과 상관없이 stylesheet에 만든 값으로 적용)
+forwards (마지막 키프레임에 설정된 값으로 유지됨)
+backwards (첫 번쨰 키프레임에 설정된 값을 가져오나 애니메이션이 지연되는동안 유지됨)
+both (앞 뒤 모두에 규칙을 따름)

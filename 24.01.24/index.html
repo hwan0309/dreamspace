@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        div{       
+            width:100px;
+            height:100px;
+        }
+        .box{
+            background-color: red;
+        }
+        .box2{
+            background-color: purple;
+        }
+        .box3{
+            background-color: lawngreen;
+        }
+    </style>
+    <script src="../etc/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('div').click(function(){
+                const color = $(this).css({
+                    "backgroundColor" : "yellow",
+                    "font-size" : "20px",
+                    "color" : "#fff"
+                })
+              
+            })
+
+        });//jquery
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

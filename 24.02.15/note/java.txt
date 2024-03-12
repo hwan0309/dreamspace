@@ -1,0 +1,12 @@
+24.02.15
+java
+
+객체지향 
+// 필드 - 객체의 데이터가 저장되는 곳
+	새로운 Class 에서  fild를 load 할 수 있음 
+ex. New Class = new Class( ) ; (fild load)
+
+// 생성자 - Student() {} - 객체 생성 시 초기화 역할 담당
+
+// 메소드 - 객체의 동작으로 호출 시 실행되는 곳 
+	

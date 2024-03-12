@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+   .box{
+    width:100px;
+    height:100px;
+    background:yellow;
+    position:absolute;
+    top:0px;
+    left:0px;
+    animation-name:newani;
+    animation-duration: 5s;
+    animation-direction:reverse;
+    animation-iteration-count:infinite;
+   }
+   @keyframes newani{
+    0%{
+        background:yellow;
+        top:0px;
+        left:0px;
+     }
+     25%{
+        background:blue;
+        left:0px;
+        top:0px;
+     }
+     50%{
+        background:red;
+        top:0px;
+     }
+      75%{
+        bakcground:green;
+        left:300px;
+      }
+      100%{
+        background:yellow;
+        top:0px;
+      }
+   }
+    
+    </style>
+</head>
+<body>
+ <div class="box"></div>
+
+</body>
+</html>

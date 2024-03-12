@@ -1,0 +1,27 @@
+24.01.04
+stylesheet
+rgb ==> 빛의 3요소 r+g+b ==> 흰색 
+
+10진수
+0000000 ==> 0 0 0 => 검정 
+1111111 ==> 255 255 255 => 흰색 rgb(255, 255, 255)
+
+16진수
+00 00 00 ==> 검정 #000000 #000
+ff ff ff ==> 흰색 #ffffff #fff
+
+색의3원색 ==> 색상 채도 명도
+// hsl(39,100%, 23%);
+
+cmy ==> 색의3요소 c+m+y ==> 검정
+
+black, pink, red, blue 
+
+외각선 
+굵기 상태 컬러 정할 수 있음
+border-width: 1px;
+border-style: solid, dotted, dashed
+border-color: 컬러값
+border-radius 테투리 변경
+(한번에 출력원할 시 top right bottom left 순으로 변경)
+

@@ -1,0 +1,33 @@
+24.01.24
+js
+
+javascript 에서 dom 탐색
+네가지 노드 기억하자
+1.문서노드(Document Node)
+2.요소노드(Element Node)
+3.어트리뷰트 노드(Attribute Node)
+4.텍스트 노드(Text Node)
+
+dom query
+1.id 선택 = document.getElementById
+2.셀렉터로 선택 = document.querySelector
+3.class로 선택 = document.getElementsByClassName
+4.태그네임 선택자 = document.getElementByTagName
+5.document.querySelectorAll
+
+부모노드
+-parent
+-parents
+-parentsUntill
+
+자식노드
+-children
+-find
+
+형제노드
+-siblings( )
+-next( )
+-nextAll( )
+-prev( )
+-prevAll( )
+-prevUntill( )

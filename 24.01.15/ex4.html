@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<h1>파일이름 확장자명 나누기</h1>
+<body>
+    <form name="fileform">
+    <input type="file" name="mylife" onchange="viewfile()">
+    </form>
+
+    <script>
+    function viewfile(){
+       const filename= document.fileform.myfile.value;
+       const arrFile = filename.split('\\').pop();
+    //    for(let i =0; i<arrFile.length; i++){
+    //     document.write(arrFile[i] + "<br>");
+    //    }
+    const ext = vfile.split(".").pop();
+    document.write("파일명은" + vfile + "이며 확장자는 " + ext + "입니다.");
+    }
+    
+    </script>
+    
+</body>
+</html>

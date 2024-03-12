@@ -1,0 +1,28 @@
+24.01.08
+css
+<text-indent>
+<letter-spacing>    
+<word-spacing>
+<line-height>
+폰트의 종류
+   sans-serif (꺽어지지 않은 글씨체 고딕체)
+   serif(바탕체)
+   monospace(타이핑체) (가로폭이 같음)
+    cursive(필기체)
+    fatasy() 
+    font-family(다양한 폰트 설정가능)
+
+display: inline, inline-block, none<==>visivilty:hidden;
+
+flex
+position: 박스가 위치하는 방법
+static(기본값)=> 관련된 다른 박스들의 상태에 따른 위치
+absoulte=>자기 부모값의 위치값을 기준으로 자기 위치를 잡는다. 
+단 부모가 위치값을 갖고있을 경우
+부모가 위치값이 없으면 body(view point)가 부모값
+위치값은 top left right bottom 
+z-index를 이용하여 상,하를 조정
+
+relative=> static + absolute = margin=> 다 통용 +top, left, right, bottom 사용가능
+
+*주로 position:absolute 값을 갖는 부모는 position:relative를 준다.

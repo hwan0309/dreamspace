@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;}
+        ul.tab{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            display:flex;
+            border:1px solid #ccc;
+            background:#eee;
+            width:600px;
+        }
+        .tab a{
+            display:block;
+            padding:15px 20px;
+            font-size:18px;
+            color:#999;
+            text-decoration:none;
+            transition:all 300ms;
+        }
+        .tab a.active,
+         .tab a:hover{
+            background-color:#ccc;
+            color:#000;
+            font-weight:bold;
+        }
+        .tabcontent{
+            padding:10px 15px;
+            background:#ccc;
+            width:600px;
+            display:none;
+        }
+    </style>
+   
+</head>
+<body>
+     <ul class="tab">
+        <li><a href="#london" id="defualt" class="tablinks active" >런던</a></li>
+        <li><a href="#paris" class="tablinks">파리</a></li>
+        <li><a href="#seoul" class="tablinks">서울</a></li>
+    </ul>
+    <div id="london" class="tabcontent">
+        <h3>런던</h3>
+        <p>런던은 영국의 수도입니다. 런던 지하철은 역사와 전통이 매우 깊어요.</p>
+    </div>
+    <div id="paris" class="tabcontent">
+        <h3>파리</h3>
+        <p>파리는 프랑스의 수도입니다. 에펠탑으로 유명한 예술의 도시입니다. </p>
+    </div>
+    <div id="seoul" class="tabcontent">
+        <h3>서울</h3>
+        <p>서울은 대한민국의 수도입니다. 서울 중앙에는 매우 커다란 강이 있어요.</p>
+    </div>
+    <script src="../etc/js/jquery.min.js"></script>
+    <script>
+        
+        $(function(){
+            $('.tabcontent').eq(0).show();
+            $('.tablinks').click(function(e){
+                //html element의 기능을 중지시킴
+                e.preventDefault();
+
+                //본문을 모두 안보이게 처리
+                $('.tabcontent').hide();
+                //본문 active를 모두 제거
+                $('.tablinks').removeClass('active');
+                //클릭한 메뉴에 active를 추가
+                $(this).addClass('active');
+                //클릭한곳의 href값을 가져옴
+                const cityName = $(this).attr("href");
+                //href값과 tabcontent의 id값이 일치하면 보이게 처리
+                $(cityName).show();
+                
+            });
+        });
+    </script>
+</body>
+</html>

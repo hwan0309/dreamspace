@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>오늘은 
+        <span id="year"></span>년 
+        <span id="month"></span>월 
+        <span id="date"></span>일
+        <span id="day"></span>요일 입니다.</p>
+        <p>지금 시간은
+    <span id="hour"></span>시
+    <span id="minute"></span>분 입니다.</p>
+
+    <button onclick="pr()">프린트하기</button>
+    
+    <script>
+        const today = new Date();
+        const daylist = ["일", "월", "화", "수", "목", "금", "토"];
+        const h = today.getHours();
+        
+        let hour="";
+        if(h >= 12){
+            hour =(h > 12)?"오후" + (h - 12):"오후" + h;
+           }else{
+            hour = (h == 0)? "오전12" : "오전" + h;
+           }
+
+           function pr(){
+            window.print();
+           }
+
+           const print =[today.getFullYear() ,today.getMonth()+1, today.getDate()];
+           
+           console.log(print.join("-"));
+        
+           document.getElementById("year").innerHTML = today.getFullYear();
+           document.getElementById("month").innerHTML = today.getMonth()+1;
+           document.getElementById("date").innerHTML = today.getDate();
+           document.getElementById("day").innerHTML = daylist[today.getDay()];
+
+           document.getElementById("hour").innerHTML = hour;
+           document.getElementById("minute").innerHTML = today.getMinutes();
+
+
+  </script>
+    
+</body>
+</html>

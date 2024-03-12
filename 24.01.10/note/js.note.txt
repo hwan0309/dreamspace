@@ -1,0 +1,14 @@
+24.01.10
+js
+charAt(index) 문자열 인덱스 번호에 맞는 문자를 반환
+indexOf("찾을문자") -1되면 없음, 있으면 찾는 문자의 index번호를 반환
+ex) str = web he she he str.lastOf("he")-> 4번 반환
+lastindexOf("찾을문자") 오른쪽부터 찾을 문자와 일치하는 문자의 인덱스번호 반환
+ex) str = web he she he str.lastOf("he")-> 11번 반환
+search("찾을문자") -1되면 없음, 있으면 찾는 문자의 index번호를 반환
+match("찾을문자") indexOf와 같으나 찾는 문자가 없을 경우 null을 반환 있을경우 그 문자열을 반환
+replace("바꿀문자", "새문자") 왼쪽부터 바꿀문자와 일치하는 문자를 찾아 새 문자로 변
+slice(a,b) a부터 b까지의 문자를 반환
+substring(a,b) a인덱스 시작 b인덱스 종료 시작인덱스는 문자열 포함 종료 인덱스는 문자열 제외, 음수를 넣으면 0 부터 시작
+substr(a,b) a인덱스 시작 b시작 인덱스 부터의 개수
+split("문자") 문자를 기준으로 문자열 나누어 배열에 저장

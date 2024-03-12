@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;}
+        ul.tab{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            display:flex;
+            border:1px solid #ccc;
+            background:#eee;
+            width:600px;
+        }
+        .tab a{
+            display:block;
+            padding:15px 20px;
+            font-size:18px;
+            color:#999;
+            text-decoration:none;
+            transition:all 300ms;
+        }
+        .tab a.active,
+         .tab a:hover{
+            background-color:#ccc;
+            color:#000;
+            font-weight:bold;
+        }
+        .tabcontent{
+            padding:10px 15px;
+            background:#ccc;
+            width:600px;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tab">
+        <li><a href="javascript:void(0)" id="defualt" class="tablinks active" onclick="openCity(event,'london')">런던</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event,'paris')">파리</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event,'seoul')">서울</a></li>
+    </ul>
+    <div id="london" class="tabcontent">
+        <h3>런던</h3>
+        <p>런던은 영국의 수도입니다. 런던 지하철은 역사와 전통이 매우 깊어요.</p>
+    </div>
+    <div id="london" class="tabcontent">
+        <h3>파리</h3>
+        <p>파리는 프랑스의 수도입니다. 에펠탑으로 유명한 예술의 도시입니다. </p>
+    </div>
+    <div id="london" class="tabcontent">
+        <h3>서울</h3>
+        <p>서울은 대한민국의 수도입니다. 서울 중앙에는 매우 커다란 강이 있어요.</p>
+    </div>
+    <script>
+        function openCity(e, cityName){
+            console.log(e.currentTarget);
+            let i;
+            const tabcontent = document.getElementsByClassName("tabcontent");
+            const tablinks = document.getElementsByClassName("tablinks");
+            for(i = 0; i < tablinks.length; i++){
+                tablinks[i].classList.remove ("active");
+            }
+            for(i = 0; i < tabcontent.length; i++){
+                tabcontent[i].style.display = 'none';
+            }
+            const tabview = document.getElementById(cityName).style.display="block";
+            //e.currentTarget.className += "active";
+            e.currentTarget.classList.add("active");
+        }
+        document.getElementById("defualt").click();
+    </script>
+</body>
+</html>

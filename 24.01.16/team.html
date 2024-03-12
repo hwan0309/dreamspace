@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        
+            .box{
+                width:100px;
+                height:100px;
+                background-color:pink;
+                position:relative;
+                animation-name:sample;
+                animation-duration:4s;
+                animation-iteration-count:4s;
+                animation-delay:1s;
+                animation-direction:reverse;
+                animation-timing-function:ease;
+                animation-fill-mode:none;
+                
+            }
+            @keyframes sample{
+            
+            0%{
+                background-color:yellowgreen;
+                 left:0px; 
+                 top:0px;
+            }
+            25%{
+                background-color:yellow;
+                 left:200px; 
+                 top:0px;
+
+            }
+            50%{
+                background-color:blue;
+                 left:200px; 
+                 top:200px;
+            }
+            75%{
+                background-color:green;
+                 left:0px; 
+                 top:200px;
+            }
+            100%{
+                background-color:red;
+                 left:0px; 
+                 top:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>애니메이션 박스</h1>
+    <div class="box"></div>
+    <script>
+
+    </script>
+</body>
+</html>

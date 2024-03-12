@@ -1,0 +1,19 @@
+24.01.18
+css
+
+부모테그가 갖는것
+display:flex
+justify-content
+align-items
+flex-direction
+flex-wrap
+flex-flow
+align-content
+
+자식테그가 갖는것
+order
+flex-grow
+flex-shrink
+flex-basis
+flex(축약) ==> grow shrink basis
+align-self

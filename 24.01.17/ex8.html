@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .imgbox{
+            width:400px;
+            position:relative;
+            margin:50px auto;
+        }
+        .imgbox img{
+            width:400px;
+            height:400px;
+            object-fit:cover;
+        }
+        .prev, .next{
+            position:absolute;
+            bottom:-30px;
+            width:100px;
+            height:30px;
+            font-size:16px;
+        }
+        .prev{
+            left:0;
+        }
+        .next{
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgbox">
+        <img src="images/001.gif" id="bimg" alt="img"/>
+        <button type="button" class="prev" onClick="imgs(0)">이전</button>
+        <button type="button" class="next" onClick="imgs(1)">다음</button>
+    </div>
+    <script>
+        let n =1;
+      
+            function imgs(i){
+            if(i){
+                n++;
+                if(n > 8){
+                    alert("이미지가 끝입니다.");
+                    n=8;
+                }
+            }else{
+                n--;
+               if(n <1){
+                alert("이미지가 끝입니다.");
+                n=1;
+               }
+            }
+            let myimg = "images/00"+n+".gif";
+            document.getElementById("bimg").src=myimg;
+        }
+    </script>
+</body>
+</html>

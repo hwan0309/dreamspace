@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style는 jquery위에 삽입 -->
+    <style>
+        .box{
+            padding:30px;
+            background:#000;
+            color:#fff;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function(){
+
+            // hide 숨김
+            $('.hide').click(function(){
+                $('.box').slideUp();  //hide(); (투박함)  //fadeOut 입력값 설정가능->(2000)
+            })
+            // show 보임
+            $('.show').click(function(){
+                $('.box').slideDown();//.show();(투박함) //foadeIn (부드러움)
+            })
+            // toggle 자동
+            $('.toggle').click(function(){ //.toggle();(투박함) //fadeToggle (부드러움)
+                $('.box').slideToggle(function(){
+                    alert("다 나옴!");//javascript의 특징 비동기
+                });
+             })
+            
+
+        }); //jquery
+    </script>
+</head>
+<body>
+    <div class="box">안녕하세요</div>
+    <button class="hide">사라져라</button>
+    <button class="show">나와라</button>
+    <button class="toggle">자동</button>
+    
+</body>
+</html>

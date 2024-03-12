@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            list-style-type: nono;
+            margin: 0;
+            padding: 0;
+            border:1px solid #333;
+            width:500px;
+            max-width:90%;
+        }
+        .nav li{
+            display:inline-block;
+        }
+        .subnav{
+            visibility: hidden;
+            position:absolute;
+            z-index:100;
+        }
+        .a{
+            position:relative;
+
+        }
+        .a:hover>.subnav{
+            visibilty: visible
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="a">
+        
+        <a href="#" class="a"> 메뉴</a>
+      <ul class="subnav">
+                <li><a href="#">서브1</a></li>
+                <li><a href="#">서브2</a></li>
+                <li><a href="#">서브3</a></li>
+                <li><a href="#">서브4</a></li>
+        </ul>
+            </li>
+        <li><a href="#"> 메뉴1</a></li>
+        <li><a href="#"> 메뉴2</a></li>
+         <li><a href="#"> 메뉴3</a></li>
+         <li><a href="#"> 메뉴4</a></li>
+    </ul>
+    
+</body>
+</html>

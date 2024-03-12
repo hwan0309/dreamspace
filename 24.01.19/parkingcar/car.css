@@ -1,0 +1,27 @@
+*{box-sizing:border-box;}
+body{
+    overflow: hidden;
+ }
+ .mycar{
+    position:absolute;
+    width:60px;
+    height:62px;
+    background:url(../parkingcar/images/KakaoTalk_20240119_145202992_01.png) no-repeat;
+    transform:rotate(180deg);
+ }
+ .cloud{
+    position:absolute;
+    bottom:-70px;
+    left:18px;
+    display:none;
+ }
+ .park{
+    width:80px;
+    height:80px;
+    border:5px solid saddlebrown;
+    border-top:none;
+    position:fixed;
+    right:50px;
+    bottom:50px;
+
+ }

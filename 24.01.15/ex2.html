@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form name="numform">
+        <input type="number" name="num1" /><br>
+        <input type="number" name="num2" /><br>
+        <button type="button" onclick="rs(1)">곱셈</button>
+        <button type="button" onclick="rs(0)">나눗셈</button>
+    </form>
+<script>
+    function rs(n) {
+        const form = document.numform;
+        const num1= form.num1.value;
+        const num2 = form.num2.value;
+        let result;
+        if(num1 && num2){
+            if(n){
+                reuslt= num1 * num2;
+                result = '${num1} x ${num2} = ${result}';
+            } else{
+                result = num1 / num2;
+                result = '${num1} / ${num2} = ${result}';
+            }
+           document.write(reuslt);
+        }else {
+            alert("값을 입력하세요");
+        }
+        
+    }
+
+  </script>
+    
+</body>
+</html>

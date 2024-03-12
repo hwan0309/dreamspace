@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>추첨으로 반장을 뽑는 아주 엄청 민주적인 선거</p>
+    <h1 id="mem"></h1>
+    <button onclick="mem()">뽑기</button>
+    <script>
+        const member = ["이름"];
+        //난수 0~16 까지 
+        
+        function mem() {
+            const rs= Math.floor(Math.random()*16);
+            document.getElementById("mem").innerHTML = member;
+           alert(rs);
+        }
+    </script>
+</body>
+</html>

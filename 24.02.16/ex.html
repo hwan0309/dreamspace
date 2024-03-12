@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    //1번
+    // function same_array(arr1,arr2){
+    //     for(let i = 0; i < arr1.length; i++){
+    //         if(arr2.indexOf(arr1[i])!= -1){
+    //             return true;
+    //         }
+    //     } return false;
+    // }
+    // console.log(same_array(["철수","영희","순이"] ["민수", "정희", "순기"]));
+
+    //2번
+//     function test_str(str){  
+//         let is_lower_case = function(s){    //소문자확인
+//         if('a' <= s && s <= 'z'){
+//             return true;
+//         }
+//         return false;
+//     }
+//     let is_first_char_lower = is_lower_case(str[0]);
+//         is_first_char_Upper = is_Upper_case(str[0]);
+
+//         if(!(is_first_char_lower || is_first_char_Upper)){
+//             return false;
+//         }
+// }
+// function test_str(str){
+//         let is_Upper_case = function(s){
+//         if('A' <= s && s <= 'Z'){   //대문자확인
+//             return true;
+//         }
+//         return false;
+//     }
+// }
+
+//3번
+function one_del(num){
+  
+</script>
+
+  let result = 0; //
+    let num_digits = [];  //하나하나의 숫자를 배열로 저장
+    while(num){
+        num_digits.push(num % 10);  //
+        num = Math.floor(num/10);   //
+    }
+    for(let i = 0; i < num_digits.length; i++){  //한자리에 생성되는 임시변수
+        let n = 0; 
+        for(let j=num_digits.length-1; j<=0; j--){   //한자리수를 뺀 숫자 생성
+            if(j !== i ){
+                n = n * 10 + num_digits[j];
+            }   
+        }
+        resut = Math.max(n,result);
+    }
+    return result;
+}
+console.log(one_del(978));
+console.log(one_del(978));
+</body>
+</html>

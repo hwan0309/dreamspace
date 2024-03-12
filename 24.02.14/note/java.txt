@@ -1,0 +1,21 @@
+24.02.14
+java
+
+향상된 for문
+(jdk 1.5이상)
+
+for(자료형 변수명 : 배열명){
+	문장
+}
+ex.
+String[] arr = {"1-1","1-2","1-3","1-4","1-5"};
+ 		
+for(String s : arr) {
+		  
+ System.out.println(s);		  
+}
+
+java Enum class
+Enum(열거타입)은 대문자로 사용 복합단어일 경우 스네이크 표기법 사용 (e_e)
+컴퓨터에 있는 날짜 요일 시간을 얻으려면 java.util.Calendar
+java.util.GregorianCalendar

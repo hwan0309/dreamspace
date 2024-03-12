@@ -1,0 +1,41 @@
+24.01.17
+css
+www.animate.css (스타일 시트 애니메이션 사용가능)
+
+object-fit
+object-position
+mutiple columns
+box sizing
+
+flexbox
+@media queries 
+
+
+*{box-sizing:border-box;} -> border, padding 박스 안쪽으로 생성
+*{box-sizing:content-box;} 기본값 border, padding 으로 박스의 크기가 늘어남
+
+display
+-block inline none
+inline-block
+
+block block block놓으려면 (inline-block, float:left 끝날땐 clear)사용했지만 
+
+최신버전
+display flex
+1. flex-direction (자식들이 쌓아지는 방향을 정의함)
+row column row-reverse column-reverse
+
+2. flex-wrap:nowrap (줄바꿈이 안됨)
+1+2: flex-flow: row wrap;
+
+3. justfy-content
+flex-start, flex-end, space-around, space-between, center
+
+4. align-items (justfy-content 의 직각 정렬)
+stretch(부모박스 크기를 채우도록 늘어남: 기본값)
+baseline
+flex-start, flex-end, space-around, space-between, center
+
+
+
+

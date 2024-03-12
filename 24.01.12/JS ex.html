@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <script>
+        let str='hello thank you good luck to you';
+        // 1. index 16번에 있는 문자를 찾기
+        document.write(str.charAt(16),"<br>");
+        // 2. 문자열 왼쪽부터 첫 번째로 발견된 you의 인덱스 번호는?
+        document.write(str.indexOf("you"),"<br>");
+        // 3. 16번 인덱스 부터 처음 발견되는 you인덱스 값은? 
+        document.write(str.indexOf("you", 16),"br");
+        // 4. 오른쪽부터 첫 번째의 you인덱스 값은?
+        document.write(str.lastIndexOf("you"),"<br>");
+        // 5. 25번 이후부터 첫 번째 인덱스 값은?
+        document.write(("you",25), "<br>");
+        // 6. 왼쪽부터 luck와 일치하는 문자를 찾아 반환
+        document.write(str.match("luck"),"<br>");
+        // 7. search를 이용해 you값 반환
+        document.write(str.search("you"),"<br>");
+        // 8. 21번부터 네 글자를 가져오시오
+        document.write(str.substr(21,4),"<br>");
+        // 9. 6부터 12이전까지의 문자를 가져오시오
+        document.write(str.substring(6, 12),"<br>");
+        // 10. 왼쪽부터 처음 발견된 you를 me로 바꾸시오
+        document.write(str.replace("you", "me"),"<br>");
+        // 11. 모두 소문자로 바꾸시오
+        document.write(str.toLowerCase(),"<br>");
+        // 12. 모두 대문자로 바꾸시오
+        document.write(str.toUpperCase(),"<br>");
+        // 13. 총 몇개의 글자가 사용되었나요?
+        document.write(str.length,"<br>");
+        // 14. 공백 문자를 기준으로 문자를 나누시오 나눈 문자는 배열 strray에 저장
+        document.write(str. split(" "),"<br>");
+        // 15. strray의 0번째 인덱스 값은?
+        document.write(str.strry(0),"<br>");
+        // 16. strray의 4번째 인덱스 값은?
+        document.write(str.strry(4),"<br>");
+        // 17. 문자 a의 아스키코드값은?
+        document.write("A".charCodeAt(),"<br>");
+        // 18. 코드값 72에 해당하는 문자는?
+        document.write(str.fromCharCode(72) ,"<br>");
+
+      
+
+
+
+
+    </script>
+    
+</body>
+</html>

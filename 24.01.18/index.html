@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            padding:10px;
+            background-color:dodgerblue;
+            display:flex;
+
+            /* 합쳐서 사용가능 flex-flow
+            flex-direction: row;
+            flex-wrap:wrap; */
+            flex-flow:row wrap;
+
+            /* between 양쪽을 끝으로 붙여 전체 간격을 맞춤 
+            around 양쪽을 붙이지 않고 모두 동일한 간격을 맞춤 */
+            justify-content:space-between;
+
+            align-items:flex-start;
+            align-content: space-around;
+           
+        }
+        .parent > div{
+            background-color:#f1f1f1;
+            width:100px;
+            margin:10px;
+            text-align:center;
+            font-size:40px;
+            line-height:100px;
+           
+        }
+        @media screen and (max-width:700px){
+            .parent{
+                flex-direction:column;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <!-- flex-grow:숫자 화면을 늘릴때 설정한 숫자만큼 커짐
+        flex-shrink:숫자 화면을 줄여도 값이 0이면 줄어들지 않음 -->
+        <div style="order:3";>1</div>
+        <div style="order:4";>2</div>
+        <div style="order:5";>3</div>
+        <div style="order:1";>4</div>
+        <div style="order:2";>5</div>
+       
+    </div>
+</body>
+</html>

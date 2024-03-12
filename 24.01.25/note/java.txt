@@ -1,0 +1,12 @@
+24.01.25
+java
+
+문자와 문자열은 다름
+문자열은 큰 따옴표 " " 로 만들며 String타입
+문자는 작은 따옴표 ' '로 만들며 정수 Char타입
+
+float 타입 4byte 
+double타입 4byte
+
+1byte = 8bit 
+1char = 2byte = 16bit

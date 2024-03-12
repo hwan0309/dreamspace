@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .act, .clo{
+            position:fixed;
+        }
+        .act{
+            top:10px;
+            left:0;
+        }
+        .clo{
+            top:10px;
+            right:0;
+        }
+        .box{
+            width:100px;
+            height:100px;
+            background:purple;
+            top:100px;
+            position:absolute;
+        }
+    </style>
+    <script src="../24.01.18/js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('button').click(function(){
+                $('.box').animate({
+                    left:'2000px'
+                }, 1000)
+            })
+            $('.clo').click(function(){
+
+           
+            $('.box').stop();
+        });
+        }); //jquery
+    </script>
+</head>
+<body>
+
+    <button class="act">작동</button>
+    <button class="clo">정지</button>
+    <div class="box"></div>
+</body>
+</html>

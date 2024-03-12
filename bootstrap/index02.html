@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../etc/css/bootstrap.css">
+    <style>    
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm border-bottom navbar-dark bg-dark">
+            <div class="container">
+               <a class="navbar-brand fw-bold" href="#">LOGO</a>
+               <button class="navbar-toggler" type="button" 
+                       data-bs-toggle="collapse"
+                       data-bs-target="#mymenu">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="mymenu">
+                  <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">메뉴1</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">메뉴2</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">메뉴3</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">메뉴4</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">메뉴5</a>
+                      </li>
+                  </ul>
+                  <form class="d-flex">
+                      <input type="text" name="search" class="form-control me-2" placeholder="search">
+                      <button class="btn btn-primary" type="button">검색</button>
+                  </form>
+              </div>
+            </div>
+        </nav>
+     </header>
+     <div class="container mt-5">
+        <div class="row">
+             <div class="col-4">
+                 <h1>Spinners</h1>
+                 <div class="d-flex">
+                     <div class="spinner-border"></div>
+                     <div class="spinner-border text-muted spinner-border-sm"></div>
+                     <div class="spinner-border text-primary"></div>
+                     <div class="spinner-border text-success"></div>
+                     <div class="spinner-border text-info"></div>
+                     <div class="spinner-border text-warning"></div>
+                     <div class="spinner-border text-danger"></div>
+                     <div class="spinner-border text-secondary"></div>
+                     <div class="spinner-border text-dark"></div>
+                     <div class="spinner-border text-light"></div>
+                 </div>
+                 <div class="d-flex my-5">
+                     <div class="spinner-grow"></div>
+                     <div class="spinner-grow text-muted"></div>
+                     <div class="spinner-grow text-primary"></div>
+                     <div class="spinner-grow text-success"></div>
+                     <div class="spinner-grow text-info"></div>
+                     <div class="spinner-grow text-warning"></div>
+                     <div class="spinner-grow text-danger"></div>
+                     <div class="spinner-grow text-secondary"></div>
+                     <div class="spinner-grow text-dark"></div>
+                     <div class="spinner-grow text-light"></div>
+                 </div>
+                 <div class="d-flex">
+                     <button class="btn btn-primary disabled">
+                         <span class="spinner-border spinner-border-sm"></span>
+                         로딩중...
+                     </button>
+                 </div>
+             </div>
+             <div class="col-4">
+                 <h1 class="mb-4">Pagination</h1>
+                 <ul class="pagination">
+                     <li class="page-item disabled"><a class="page-link" href="#">이전</a></li>
+                     <li class="page-item"><a class="page-link" href="#">1</a></li>
+                     <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                     <li class="page-item"><a class="page-link" href="#">3</a></li>
+                     <li class="page-item"><a class="page-link" href="#">4</a></li>
+                     <li class="page-item"><a class="page-link" href="#">다음</a></li>
+                 </ul>
+             </div>
+             <div class="col-4">
+                <h1 class="mb-5">경고버튼</h1>
+                <form>
+                    <div class="mb-4">
+                    <input type="text" id="name" class="form-control" placeholder="이름">
+                    <div class="alert alert-danger alert-dimissible fade show">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>warning!!</strong> 이름을 입력하세요.
+                    </div>
+                     </div>
+                     <button type="button" class="btn btn-primary" onclick="formSubmit()"></button>
+                </form>
+             </div>
+        </div>
+    </div>
+ 
+    <script src="../etc/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function formSubmit(){
+        const myval = document.getElementById("name").value;
+        alert(myval);
+        }
+    </script>
+</body>
+</html>

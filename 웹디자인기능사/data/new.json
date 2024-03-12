@@ -1,0 +1,16 @@
+{
+    "newlist": [
+        {"num":1, "title": "black label", "txt":"프리미엄 라인, 블랙라벨", "img":"./images/pd/001.jpg"},
+        {"num":2, "title": "new hotdeal", "txt":"허리는 밴드거부감 없이!!", "img":"./images/pd/002.jpg"},
+        {"num":3, "title": "office look", "txt":"네크라인과 아랫단은 패턴을 담아 최강 아이템으로", "img":"./images/pd/003.jpg"},
+        {"num":4, "title": "outer", "txt":"국가는 평생교육을 진흥하여야 한다. 피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 ", "img":"./images/pd/004.jpg"},
+        {"num":5, "title": "pants", "txt":"국회의원은 국가이익을 우선하여 양심에 따라 직무를 행한다.", "img":"./images/pd/005.jpg"},
+        {"num":6, "title": "slacks", "txt":"연소자의 근로는 특별한 보호를 받는다.", "img":"./images/pd/006.jpg"},
+        {"num":7, "title": "dress", "txt":"국회의 정기회는 법률이 정하는 바에 의하여 매년 1회 집회되며", "img":"./images/pd/007.jpg"},
+        {"num":8, "title": "accessories", "txt":"계엄을 선포한 때에는 대통령은 지체없이 국회에 통고하여야 한다.", "img":"./images/pd/008.jpg"},
+        {"num":9, "title": "black label", "txt":"전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.", "img":"./images/pd/009.jpg"},
+        {"num":10, "title": "hot deal", "txt":"국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.", "img":"./images/pd/010.jpg"},
+        {"num":11, "title": "event sale", "txt":"입법사항에 관한 조약의 체결·비준에 대한 동의권을 가진다.", "img":"./images/pd/011.jpg"},
+        {"num":12, "title": "office look", "txt":"프리미엄 라인, 블랙라벨", "img":"./images/pd/012.jpg"}
+    ]  
+}         

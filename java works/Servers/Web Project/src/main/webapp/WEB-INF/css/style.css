@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css');
+@import url('slick.css');
+@import url('slick-theme.css');
+@import url('animate.min.css');
+@import url('bootstrap.min.css');
+@import url('summernote-bs4.css');
+
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    background:#e8eaeb;
+}
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1440px;
+    }
+}
+header{
+    background-color:#434c53;
+    color:#fff;
+    display: flex;
+    justify-content: flex-start;
+    padding:5px 15px;
+    margin-left:-15px;
+    margin-right:-15px;
+}
+a.brand{
+    color:#dfdada;
+    font-size:22px;
+    line-height:30px;
+    font-weight:700;
+}
+nav{
+    margin-left:30px;
+}
+nav a{
+    color:#fff;
+    margin-right:15px;
+    line-height:30px;
+}
+aside{
+    width:300px;
+}
+.bannerbox{
+    margin-top:80px;
+}
+.bannerbox img{
+    max-width:100%;
+    border-radius:9px;
+    display:block;
+    margin-bottom:20px;
+}
+section{
+    width:calc(100% - 300px);
+    padding-left:15px;
+    padding-top:15px;
+}
+
+/** main **/
+.cards h1, .gal-box h1{
+    font-size:22px;
+    padding-bottom:14px;
+    margin-bottom:15px;
+    border-bottom:1px solid #e8eaeb;
+}
+.card{
+    margin-left:10px;
+    margin-right:10px;
+}
+.main-list{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+.main-list li{
+   line-height:35px;
+   border-bottom:1px dashed #e8eaeb;
+   transition: all 300ms;
+   padding-left:10px;
+   padding-right:10px;
+}
+.main-list li:hover{
+    background-color:#f0ecec;
+}
+.main-list span{
+    margin-left:10px;
+    margin-right:10px;
+}
+.main-list a{
+    color:#434c53;
+}
+.main-list .small-font{
+    font-size:13px;
+    color:#c20e59;
+}
+span.space{
+    display:inline-block;
+    width:15px;
+}
+.right{
+    float:right;
+}
+.mouseover-overlay{
+    position:relative;
+    width:160px;
+    height:auto;
+}
+.mouseover-overlay img{
+    width:160px;
+    height:100px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.yplay{
+    font-size:50px;
+    position:absolute;
+    z-index:2;
+    color:rgba(0,0,0,0.5);
+    top:10px;
+    left:60px;
+}
+.body-txt{
+    width:calc(100% - 180px);
+    margin-left:20px;
+}
+.body-txt h3{
+    font-size:16px;
+    line-height:1.4;
+}
+.body-txt h3 a{
+    color:#1d1e1f;
+}
+
+.slicks div.card{
+    max-width:250px;
+}
+
+.listbox, .register, .write, 
+.member, .memberlist, .update, 
+.contents, .delete{
+    background:#fff;
+    padding:40px;
+}
+.listbox h1{
+    font-size:25px;
+}
+.listbox .table{
+    border-bottom:1px solid #dee2e6;
+}
+
+.listbox th{
+    text-align:center;
+    position:relative;
+}
+.listbox th:not(:last-child)::after{
+    content:"";
+    display:block;
+    width:1px;
+    height:15px;
+    background:#c5bebe;
+    box-shadow:1px 0 0 #e8eaeb;
+    position:absolute;
+    right:0;
+    top:18px;
+}
+.listbox td a{
+    margin-left:15px;
+    color:#1d1e1f;
+    display:inline-block;
+    max-width:380px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    
+}
+.listbox td span{
+    font-size:13px;
+    margin-left:5px;
+    vertical-align: top;
+}
+.listbox td i{
+    font-size:16px;
+    margin-left:1px;
+    vertical-align: top;
+}
+.re{
+    display:inline-block;
+    width:20px;
+}
+/* 페이징 */
+.paging{
+   list-style-type:none;
+   display:flex;
+   justify-content: center;    
+}
+.paging li{
+    font-size:16px;
+    margin-left:5px;
+    margin-right:5px;
+}
+.paging li a{
+    color:#434c53;
+    padding:3px 10px;
+}
+.paging li a:hover,
+.paging li a.active{
+    background:#434c53;
+    border-radius:5px;
+    color:#fff;
+    text-decoration:none;
+}
+
+/** 검색 **/
+.searchform{
+    width:40%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.dropdown-menu{
+    min-width:95%;
+}
+.dropdown-item{
+   padding: 0.25rem 1.1rem;
+}
+.input-group-prepend{
+    position: relative;
+}
+
+/** register **/
+.registerform{
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:50px;
+}
+.registerform label{
+    display:block;
+    background-color:#e8eaeb;
+    line-height:35px;
+    margin-top:5px;
+    flex-basis: 125px;
+    max-width:125px;
+}
+
+/** 글쓰기 **/
+label.form-label{
+    display:inline-block;
+    width:100px;
+    padding-left:30px;
+}
+.writeform .form-control{
+    width: calc(100% - 120px);
+}
+
+footer{
+    background-color:#434c53;
+    color:#fff;
+    text-align:center;
+    line-height:60px;
+    margin-left:-15px;
+    margin-right:-15px;
+}

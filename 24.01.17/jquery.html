@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery 필수입력 jq를 호출한다는 의미 -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <script>
+        // 1. 긴 호출 문 (선택가능)
+        //  $(document).ready(function(){
+        //  });
+
+        //  2. 짧은 호출 문 (선택가능)
+        // $(function(){
+        //     $(셀렉터). 이벤트(function(){
+        //     })
+        // })   <--(괄호 밖으로 나가면 jquery설정 안됨)
+
+        $(function(){
+            $('div').click(function(){
+                alert("눌렀니?");
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <div class="box" id="mybox">
+        박스
+    </div>
+</body>
+</html>

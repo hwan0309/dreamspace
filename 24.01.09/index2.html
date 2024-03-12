@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigbox{
+            width:800px;
+            height:800px;
+            overflow:hidden;
+        }
+        .bigbox img{
+            width: 100%;
+        }
+        .sbox{
+            width:800px;
+            overflow:hidden;
+        }
+        .sbox img{
+            width:160px;
+            float:left;
+        }
+        #popup{
+            width:400px;
+            height:300px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+            background-color: #efefef;
+            position:fixed;
+            top:200px;
+            left:calc(50% - 200px);
+            text-align:center;
+            z-index:100;
+            display:none;
+        }
+       
+    
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <img src="./wedding/imges/KakaoTalk_20240109_115225205.webp" alt="01" id="bigbox"/>
+    </div>
+    <div class="sbox">
+        <img src="./wedding/imges/KakaoTalk_20240109_115225205_01.jpg" alt="01"
+        onclick="document.getElementById('bigbox').src='./wedding/imges/KakaoTalk_20240109_115225205.webp'"/>
+        <img src="./wedding/imges/KakaoTalk_20240109_115225205.webp" alt="01"/>
+        <img src="./wedding/imges/KakaoTalk_20240109_115225205.webp" alt="01"/>
+        <img src="./wedding/imges/KakaoTalk_20240109_115225205.webp" alt="01"/>
+        <img src="./wedding/imges/KakaoTalk_20240109_115225205.webp" alt="01"/>
+    </div>
+    <button id="vpopup" onclick="viewpopup();">팝업창 보이기</button>
+    <div id="popup">
+        <h1>팝업창입니다.</h1>
+        <button id="close" onclick="hidepopup()">닫기</button>
+    </div>
+    <script>
+          function viewImg(str) {
+        document.getElementById('bigbox').src='images/'+str+'.jpg';
+    }
+    function viewpopup() {
+      document.getElementById('popup').style.display="block";
+    }
+    function viewImg(){
+        document.getElementById("popup").style.display="none";
+    }
+    </script>
+</body>
+</html>

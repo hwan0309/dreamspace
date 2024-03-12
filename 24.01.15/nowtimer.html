@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {background-color: #000000;}
+
+.clock {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.lineHour {
+    width: 10px;
+    height: 150px;
+    background: white;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 5px);
+    transform-origin: bottom;
+}
+
+.lineMin {
+    width: 4px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 2px);
+    transform-origin: bottom;
+}
+
+.lineSec {
+    width: 2px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 1px);
+    transform-origin: bottom;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="clock">
+        <div class="lineHour"></div>
+        <div class="lineMin"></div>
+        <div class="lineSec"></div>
+    </div>
+    <script>
+       
+       setInterval(() => {
+    
+    // 현재 시간 가져오기
+    const now = new Date();
+    
+    
+    // 시간을 단위로 추출
+    const h = now.getHours();  // 시간(0~23)
+    const m = now.getMinutes();  // 분(0~59)
+    const s = now.getSeconds();  // 초(0~59)
+    
+    // 시계 바늘의 각도 반영
+    
+    // 시침(시침은 시와 함께 분의 각도도 고려)
+    const degH = h * (360 /12) + m * (360 / 12 / 60);
+    // 분침
+    const degM = m * (360 / 60);
+    // 초침
+    const degS = s * (360 / 60);
+
+        
+            const elementH = document.querySelector('.lineHour');
+            const elementM = document.querySelector('.lineMin');
+            const elementS = document.querySelector('.lineSec');
+        
+    elementH.style.transform = `rotate(${degH}deg)`;
+    elementM.style.transform = `rotate(${degM}deg)`;
+    elementS.style.transform = `rotate(${degS}deg)`; 
+       }, );
+        
+
+        // setInterval(nowTimer, 1000)//함수, 간격
+        //     function nowTimer(){
+        //     const d = new Date();
+        //     document.getElementById("nowtime").innerHTML = d.toLocaleTimeString();
+    </script>
+
+
+    
+</body>
+</html>

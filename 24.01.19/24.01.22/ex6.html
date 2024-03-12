@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //주어진 세 정수 x, y, z중 가장 큰 정수를 찾아라.
+
+        //변수 값 설정
+        
+
+       let a= prompt("값을 넣어주세요"); 
+       let b= prompt("값을 넣어주세요"); 
+       let c = prompt("값을 넣어주세요"); 
+       
+        if(a > b && a> c){
+            if(b==c){
+            alert("다시 입력해주세요");
+            location.reload();
+            }
+            document.write("a가 제일 큽니다");
+            
+        }else if(b > a && b > c){
+            if(a==c){
+                alert("다시 입력해주세요");
+            location.reload();}
+        document.write("b가 제일 큽니다");
+
+        }else if(a == b == c){
+
+            alert("다시 입력해주세요");
+            location.reload();
+
+        }else {
+            if(a==b){
+            alert("다시 입력해주세요");
+            location.reload();}
+            document.write("c가 제일 큽니다");
+        }
+
+
+    
+         
+
+</script>
+
+</body>
+</html>

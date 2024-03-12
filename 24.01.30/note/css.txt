@@ -1,0 +1,16 @@
+24.01.30
+css
+
+SEO 최적화(검색엔진 최적화)
+title
+meta name=description
+content="웹페이지 요약"
+meta name="keywords" content="html,java,works..."
+meta name ="author" content =" ji hwan"
+
+Open Graph 태그 og로 시작
+meta name = "og:site_name" content="이름"
+meta name = "og"decription" content=" "
+meta name = "og: type" content="웹페이지 유형"
+meta name = "og:url" content="https://주소"
+meta name = "og:image" content="https:/... 이미지경로" 

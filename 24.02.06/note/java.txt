@@ -1,0 +1,16 @@
+24.02.06
+java
+
+다차원 배열
+2차원 이상의 배열을 의미하며, 배열 요소로 또 다른 배열을 가지는 배열을 의미
+ex.
+1. type[ ] arrayname;
+2. type arrayname[ ];
+3. type[ ] arrayname[ ]; 
+
+this()참조 변수
+메소드는 생성자 내부에서만 사용할 수 있으며, 
+같은 클래스의 다른 생성자를 호출할 때 사용합니다.
+
+배열은 type선언 해야함
+String type 선언 시 string type만 사용 가능

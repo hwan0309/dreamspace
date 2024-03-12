@@ -1,0 +1,20 @@
+24.03.05
+DB
+date 나타내는 메소드
+
+
+Timestamp 
+Time
+Date
+TImeStamp
+TImeStamptz 
+
+EXTRACT() 
+추출하고자하는 값 -YEAR, MONTH, DAY, WEEK, QUARTER
+
+AGE()
+추출하고자하는 값 (date_col)
+
+TO_CHAR()
+추출하고자하는 값 (date_col, 'mm-dd-yyyy')
+

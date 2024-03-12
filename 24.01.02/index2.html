@@ -1,0 +1,42 @@
+<!--
+prompt(질문) 네이버 다음 구글 야후 중 즐겨 사용하는 포털 검색 사이트는?
+
+구글= 변수 url=구글url저장
+네이버= 변수 url=네이버url저장
+선택한것이 없으면 alert 보기중에 없습니다
+
+if(url) location.href="http://"+url
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let site = prompt("네이버, 다음, 구글, 아후 중 즐겨 사용하는 포털 검색 사이트는?");
+        let url;
+        switch(site){
+            case"네이버":
+                url ="www.naver.com";
+            break;
+            case"다음":
+                url ="www.daum.net";
+            break;
+            case"구글":
+                url ="www.gogle.com";
+            break;
+            case"야후":
+                url ="www.yahoo.com";
+            break;
+            default : 
+            alert ("보기중에 없습니다");
+        }
+        if(url){location.href="http://" + url }
+
+           </script>
+</body>
+</html>

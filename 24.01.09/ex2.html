@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let greenAir=["교대", "방배", "강남"];
+        let yelloAir=["미금", "정자", "수서"];
+
+        greenAir.splice(2, 1, "서초", "역삼");//2번 인덱스부터 1개의 데이터를 삭제//
+        console.log(greenAir);
+
+        let rs = yelloAir.pop();
+        console.log(yelloAir);
+        console.log(rs);
+
+        rs=greenAir.length;
+        console.log(rs);
+
+        for(let i = 0; i < greenAir.lenght; i++);
+        console.log("그것은", greenAir[i]);
+    </script>
+    
+</body>
+</html>

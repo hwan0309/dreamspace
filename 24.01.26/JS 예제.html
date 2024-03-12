@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //예제1
+        function fl(str){
+            //길이가 1일경우 그대로 반환
+            if(str.length < 2){
+                return str;
+            }
+            //앞에 한자 뒤에 한자를 뺀 문자열을 추출
+            let mid = str.substring(1, str.length - 1);
+            //마지막문자, mid로 추출한 문자, 첫 번째 문자를 합쳐서 리턴
+            return (str.charAt(str.length-1)); + mid + str.charAt(0);
+        }
+        console.log(fl('a'));
+        console.log(fl('ab'));
+        console.log(fl('abc'));
+
+        //예제2
+        function test2(num){
+            if(num % 3 == 0 || num % 7){
+                return true;
+            }else{
+                return false;
+            }
+        }
+       
+        //예제3 java로 시작하는지 확인 
+        function f12(str){
+            if(str.length >=3){
+              
+                let back = str.substring(str.length - 3);
+                return back + str + back;
+            }else{
+                return false;
+            }
+        }
+        console.log(f12('abc'));
+        console.log(f12('abcde'));
+
+        function search_java(str){
+            if(str.length < 4){
+                return false;
+            }
+            let front = str.substring(0,4).toLowerCase();
+            if(front == 'java'){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(search_java('JavaScript'));
+        console.log(search_java('JavaScript'));
+        console.log(search_java('TypeScript'));
+
+        //예제4 5. 임의의 x,y가 모두 50~99사이에 있는지 확인
+        function check_number(x,y){
+            if((x >= 50 && x <= 99)&&(y >= 50 && y <= 99)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+       
+        //예제4 x,y크기를 비교 ==> 큰수를 찾아 z와 비교
+        function max_of_nums(x, y, z){
+            let max_num = 0;
+            if(x > y){
+                max_num = x;
+            }else{
+                max_num = y;
+            }
+            if(z > max_num){
+                max_num =z;
+            }else{
+                max_num = max_num;
+            }
+        }
+
+        //예제5 주어진 두 x,y중 100에 가까운 큰 정수를 찾아 함수를 작성하고, 두수가 같으면 false를 출력
+        function near100(x,y){
+            if(x == y){
+                return false;
+            }else{
+                let xa = Math.abs(x - 100); //x에서 100을 뺀 절대값
+                let xy = Math.abs(y - 100); //y에서 100을 뺀 절대값
+                if(xa < xy){ //100을 뺀 두 수를 비교
+                    return x;
+                }else{ //100을 뺀 두수가 같을때는 숫자가 큰 수를 출력
+                    if(x > y){
+                        return x;
+                    }else{
+                        return y;
+                    }
+                }
+            }
+        }
+        console.log(near100(101,99));
+
+        //예제6 두수가 40~60사이에 있으면 true를 출력 70~100사이에 있으면 true를 출력
+        function num_range(x,y){
+            //1문항 x,y 가 40~60에 있는지 확인 || 2문항 x,y가 70~100에 있는지 확인
+            if((x >= 40 && x <= 60 && y >= 40 && y <= 60)||(x >= 70 && x <= 100 && y >= 70 && y <=100)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(num_range(70,100));
+
+        //예제7 
+        function check_char(str, char){
+            let flug = false;
+            for(let i = 0; i < str.length; i++){
+                ((str.charAt(i) == char) &&( i >= 1 && i <= 3));
+                flug = true;
+                break;           
+        }
+            return flug;
+        }
+        console.log(check_char("머머머ㅓ머머ㅓ","후후후ㄻㄴㅇㄹㅇㅁㄴ"));
+        console.log(check_char("Javascript","a"));
+
+    </script>
+    
+</body>
+</html>

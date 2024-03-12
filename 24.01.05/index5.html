@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>오늘 날짜 정보</h1>
+        <p>
+            <span id="year"></span> 년
+            <span id="month"></span> 월
+            <span id="day"></span> 일
+            <span id="week"></span> 요일
+        </p>
+        <p id = "gradu"></p>
+    </div>
+
+    <script>
+        const today = new Date();
+        document.getElementById("year").innerHTML = today.getFullYear();
+        document.getElementById("month").innerHTML = today.getMonth()+1;
+        document.getElementById("day").innerHTML = today.getDay();
+        document.getElementById("week").innerHTML = getWeek(today.getDay());
+        
+        // 문서에 있는 id쓰기
+        // document(문서에) .getElementById("아이디명") .innerHTML = 내용"
+        function getWeek(week){
+            let w;
+        //    switch(week){
+        //     case 0: w = "일";break; 
+
+        //     case 1: w = "월";break;
+          
+        //     case 2: w = "일"; break;
+            
+        //     case 3: w = "일"; break;
+            
+        //     case 4: w = "일"; break;
+           
+        //     case 5: w = "일"; break;
+          
+        //     case 6: w = "일"; break;
+        //  }
+        //    return w; 
+        }
+        function getWeek(wk){
+            const weeks = ["일", "월", "화", "수", "목", "금", "토"];
+            return weeks[wk];
+        }
+        //이씨는 17년 2월12일 생입니다. 무슨요일에 태어났을까요?
+        // const birthDay = new Date(1997,1,12);
+        // console.log(birthDay.getDay());
+        //우리가 졸업하는 날은 2024년 6월7일0요일입니다
+        const graDate = new Date(2024, 5, 7);
+    const str = `우리가 졸업하는 날은 
+                 ${graDate.getFullYear()}년 
+                 ${graDate.getMonth()+1}월
+                 ${graDate.getDate()}일 
+                 ${getWeek(graDate.getDay())}입니다.`;
+
+            
+
+
+            const tday = new Date();
+            const gday = new Date(2024, 5, 7);
+            const diffDate = gday.getTime() - tday.getTime();
+            const result = Math.ceil(diffDate / (60 * 1000 * 60 * 24));
+             document.getElementById("gradu").innerHTML = str + "졸업까지는" + result + "일 남았습니다.";
+    </script>
+
+</body>
+</html>

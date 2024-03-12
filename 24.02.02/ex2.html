@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id = "strname"></p>
+</head>
+<body>
+    <script>
+        //8번
+        function capital_str(str){
+            str = str.split(" ");
+            for(let i = 0;  i < str.length; i++){
+                str[i] = str[i][0].toUpperCase() + str[i].substr(1); //첫앞글자 대문자로 변경
+            }
+            return str.join(" ");
+        }
+        document.getElementById("strname").innerHTML = capital_str("it can be used");
+    </script>
+</body>
+</html>

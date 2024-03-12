@@ -1,0 +1,8 @@
+24.02.20
+DB
+
+join
+inner join / null값 허용x null값을 가지게 되면 결과에서 제외
+left join / 조인시 join의 왼쪽 테이블의 null값을 허용
+right join / 조인시 join의 오른쪽 테이블의 null값을 허용
+full join /	mysql 지원x

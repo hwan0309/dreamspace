@@ -1,0 +1,22 @@
+{
+    "id":1,
+    "title": "지그재그 니트 덕다운 롱 패팅",
+    "code": "P00103EEA",
+    "orprice": 150000,
+    "saleprice": 140000,
+    "Reserves": 0.005,
+    "delivery": 5000,
+    "colors": [
+        { "color": "black", "kcolor": "검정", "opt1": 0 },
+        { "color": "blue", "kcolor": "파랑", "opt1": 0 },
+        { "color": "green", "kcolor": "녹색", "opt1": 0 },
+        { "color": "gray", "kcolor": "회색", "opt1": 0 }
+    ],
+    "sizes": [
+        { "size": "xs", "ksize": "엑스스몰", "opt2": 1000 },
+        { "size": "s", "ksize": "스몰", "opt2": 0 },
+        { "size": "m", "ksize": "미디움", "opt2": 0 },
+        { "size": "l", "ksize": "라지", "opt2": 0 } 
+        { "size": "xl", "ksize": "엑스라지", "opt2": 2000 }       
+    ]
+}

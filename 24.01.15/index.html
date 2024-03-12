@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background:red;
+            margin:30px;
+
+            /* 에니메이션 효과
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-delay:0.2s; */
+
+            transition: all 1s 0.2s;
+
+            /* left:calc(50% - 50px);  가운데 정렬*/ 
+       }
+        .box1{
+           position:absolute; 
+            top:100px;
+            left:50%; 
+            transform: translatex(-50%);  /*가운데정렬  */
+        }
+        .box2:hover{
+            transform: rotate(20deg);
+        }
+        .box3:hover{
+            transform: skew(30deg, 20deg);
+        }
+        .box4:hover{
+            transform: scalex(1.5);
+        }
+        .box5:hover{
+            transform:matrix(1, -0.3, 0, 1.2, 0, 0);
+        }
+        a{
+            text-decoration:none;
+            transition:all 300ms;
+        }
+        a:hover::after{
+            content:"";
+            display:inlink-block;
+            border-bottom:1px solid #333;
+            
+        }
+        .mybutton{
+            font-size:18px;
+            padding:5px, 25px;
+            box-shadow:2px 2px 0px 0px #efefef;
+            border-radius: 10px;
+            cursor:pointer;
+            background-image:linear-gradient(to bottom, #333 5% , #3bbeee 100%);
+            color:#fff;
+            border:none;
+            font-weight:bold;
+            transition:all 0.3s;
+            
+       
+    }
+    .mybutton:hover{
+        background-image:linear-gradient(to bottom, #0183b4);
+       
+    }
+    .mybutton:active{
+        transform:translate(-2px, -2px);
+    }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="mybutton"></div>
+
+    <a href="#">링크</a>
+   
+    
+</body>
+</html>

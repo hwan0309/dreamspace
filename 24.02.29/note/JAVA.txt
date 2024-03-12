@@ -1,0 +1,19 @@
+24.02.29
+JAVA
+
+interface 
+두 장치를 연결하는 접속기
+두 장치를 다른 객체로 친다면 인터베이스는 두 객체를 연결하는 역할을 함
+public 상수필드
+public 추상 메소드
+public 디폴트 메소드
+public 정적 메소드
+private 메소드
+private 정적 메소드
+
+선언
+interface interface_name ( .....)  //default 접근제한
+public interface interface_name (......) //public 접근제한
+
+interface클래스를 만들면 객체 클래스에 implements 키워드를 넣어줘야 인터페이스를 
+통해 사용할 수 있다는 표시

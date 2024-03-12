@@ -1,0 +1,25 @@
+24.02.07
+java
+
+null값이 주소를 잊어버렸을 경우
+Garbage Collector가 자동으로 처리
+ex.
+String hobby = "여행"; //힙영역에 "여행"이라는 객체가 생성되고 주소가 hobby에 할당
+hobby = null;  //"여행"이라는 String 객체가 쓰레기가 됨
+		
+String bestCar ="스포티지";
+String worstCar = bestCar; //bestCar에 저장된 겍체 번지를 WorstCar에 대입	
+bestCar = null; 	//worstCar가 null로 쓰레기처리 되지 않았기에 출력가능
+		
+String name = 00
+new String (00)
+위 두개는 같은뜻 다른 의미임
+
+객체지향 
+객체란 분모안에 들어있는 분자
+ex. 비행기(승무원, 기장, 승객, 짐 ...)
+
+객체는 상태, 동작 보유
+
+
+

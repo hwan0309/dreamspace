@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <script>
+      let userName = prompt("영문이름을 적어주세요");
+      let UpperName = userName.toUpperCase();
+      document.write(UpperName, "님 반갑습니다<br>");
+
+    //  끝의 네자리수를 잘라내고 그곳을 ****을 넣어준다
+    //  전화번호.substring(0, 전화번호.length-4) + "****";
+    //  substr substring
+
+    let userTel = prompt("전화번호를 입력해주세요");
+    let result = userTel.substring(0,userTel.length-4) + "****";
+    document.write(result);
+    </script>
+    
+</body>
+</html>

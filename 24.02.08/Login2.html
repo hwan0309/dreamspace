@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            width:1200px;
+            max-width:100%;
+            margin:auto;
+        }
+        .row{
+            display:flex;
+        }
+        .col{
+            flex:1 1 33.3333%;
+            padding:20px;
+        }
+        .box{
+            padding:20px;
+            border:1px solid black;
+        }
+        @media(max-width: 800px){
+            .row{
+                flex-direction:column;
+            }
+            .col:first-child{
+                order:2;
+            }
+            .col:last-child{
+                order:1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>반응형 회원가입 폼</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="box">회원정보</div>
+            </div>
+            <div class="col">
+                <div class="box">카드정보</div>
+            </div>
+            <div class="col">
+                <div class="box">장바구니</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+24.01.23
+js
+
+내용물 추가
+before( ) 박스의 앞 뒤
+after( ) 박스의 밑
+prepend( ) 박스안의 위
+append( ) 박스안의 밑
+
+내용물 삭제
+remove( ) 
+empty( )
+
+addClass( ) 클래스 추가
+removeClass( ) 클래스 삭제
+toggleClass( ) 클래스 추가, 삭제
+hasClass( ) 클래스가 있는지 확인
+
+
+//두가지 종류로 값을 묶을 수 있음
+css("키", "값").css
+
+.css({
+	"키": "값",
+	"키2": "값2"
+	}));

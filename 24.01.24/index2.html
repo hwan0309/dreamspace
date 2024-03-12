@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text , #test2{
+            font-size:10px;
+            
+        }
+    </style>
+    <script src="../etc/js/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+            $('img').click(function(){
+               const w = $(this).width();
+               const h = $(this).height();
+               const str = "이 이미지는 가로" + w + "px, 세로" + h + "px 입니다.";
+               $('p').text(str);
+            });
+    });//jquery
+    </script>
+</head>
+<body>
+    <p>안녕하세요</p>
+    <p>반갑습니다</p>
+  <p id="test"></p>
+  <p id="text2"></p>
+
+  <script>
+    const p = document.getElementsTagName("p");
+    const id = document.getElementById("test").innerHTML= el[0].innerHTML;
+    const cla = document.getElementsByClassName("test");
+    console.log(id);
+  </script>
+  </form>
+</body>
+</html>

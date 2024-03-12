@@ -1,0 +1,28 @@
+24.01.11
+git
+
+git commit-m--> "메시지" 메시지를 커밋과 동시에 입력
+git commit-am--> "메시지" git add + 메시지를 커밋과 동시에 입력, 단 파일을 새로 생성하거나
+		삭제했을 경우는 사용불가(git add를 반드시 해야함)
+gitignore--> git에 맡기지 않은 파일을 기록
+git log--> git상황확인 
+git dif-->f 변경사항 확인
+git restore--> 이전명령 취소
+
+브랜치명 변경
+git switch-->이동할 브랜치명
+git switch -c 브랜치명--> 새로브랜치를 만들면서 그 브랜치로 이동
+git branch-->브랜치 목록확인(소속되어있는 브랜치에 *표시됨)
+
+되돌리기
+git log-->이용하여 돌아갈 위치의 해시를 확인
+1. git rest-hard 돌아갈 커밋 해시
+2. git revert 돌아갈 커밋 해시
+3. git revert-no-commit 돌아갈 커밋해시(커밋하지 않고 revert)
+
+revert에서 충돌발생
+충돌파일 확인
+-해당파일에 충돌마크<<<<<<=======>>>>>>>>>
+충돌마크를 기준으로 원하는 변경사항을 선택, 저장
+git add 충돌해결한 파일
+git revert--continue

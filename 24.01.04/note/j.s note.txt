@@ -1,0 +1,63 @@
+24.01.04
+j.s
+
+function (함수): 함수 리터럴은 function으로 시작
+add( ): 함수명//함수명이 없는 경우는 익명함수라 한다.
+(x + y): 매개변수
+
+function 함수이름 (재료) {
+재료로 무엇이 만들어지는 식
+retrun
+       }
+
+function add(x,y) {
+    return x + y;
+}
+console.log (add(10, 20));
+
+함수의 호이스팅
+
+화살표 함수
+
+var는 함수 스코프의 적용을 받음
+let는 모든 스코프의 적용을 받음
+
+함수밖에 쓴 var 변수1과 함수 안에 쓴 var은 변수1은 다른 변수
+그러나 if문 등 다른 스코프에서는 같은 변수이다
+
+모든 스코프밖에 쓴 let과 안에 쓴 let은 다른 변수이다
+
+prompt(" ");
+comform(" ");
+document.write(" ");
+모두 함수
+
+객체 ----class
+모든 사물은 객체
+
+tv 객체(Object) {
+-property(특성)
+-넓이
+-높이
+-인치
+-제품명
+-무게
+
+tv method
+-켜다( )
+-끄다( )
+-볼륨을 줄이다( )
+-볼륨을 높이다( )
+ }
+
+tv.넓이
+tv.끄다( )
+
+자바 스크립트가 내장하고있는 객체 : 내장객체
+-String, Data, Array(배열), Math(수학)
+
+브라우저 객체모델
+-Window, screen, location, history, navigator
+
+문서 객체모델 
+

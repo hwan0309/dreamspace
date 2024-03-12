@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style:none;
+            padding:0;
+        }
+        ul.main-nav{
+            
+            display:flex;
+            width:600px;
+            margin:30px auto;
+            justify-content:space-between;
+        }
+        ul.main-nav>li{
+            position:relative;
+        }
+       
+        ul.main-nav>li>a,
+         ul.sub-nav>li>a{
+            font-size:20px;
+            text-decoration:none;
+            padding:5px 10px;
+            border:1px solid #333;
+        }
+        ul.main-nav>li>a:hover{
+            background:#ddd;
+        }
+        .sub-nav{
+            position:absolute;
+            top:27px;
+            display:none;
+        }
+        .sub-nav li{
+            margin-top:11px;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.main-nav>li').hover(function(){
+                $(this).find('.sub-nav').stop().slideToggle();
+            })
+        }); //jquery
+     </script>
+ </head>
+<body>
+    <ul class="main-nav">
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a>
+            <ul class="sub-nav">
+        <li><a href="#">서브1</a></li>
+        <li><a href="#">서브2</a></li>
+        <li><a href="#">서브3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a>
+            <ul class="sub-nav">
+                <li><a href="#">서브1</a></li>
+                <li><a href="#">서브2</a></li>
+                <li><a href="#">서브3</a></li>
+                    </ul>
+        </li>
+        <li><a href="#">메뉴5</a></li>
+    </ul>
+   
+</body>
+</html>

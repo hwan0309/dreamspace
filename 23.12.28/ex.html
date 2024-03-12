@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+let uName = prompt("당신의 이름은?","");
+let uHight = prompt("당신의 키를 입력해주세요","0");
+let uWeight = prompt("당신의 몸무게를 입력해주세요","0");
+
+
+//평균체중 구하는 공식 
+
+let normalweight =(uHight - 100)*0.9;
+const result = uWeight - normalweight -5 && uWeight <= normalweight +5;
+result = result? "적정체중입니다" : "적정체중이 아닙니다"
+
+document.write(uName + "적정체중입니다" : "적정체중이 아닙니다" + result);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+24.02.23
+java
+
+상속(Inheritance)
+부모가 자식에게 물려주는 행위
+
+public class 부모{
+	String 머리색;
+	Void 언어(){
+	한국어로 말한다 } }
+
+public class 자식 extends 부모 {
+ 	String 피부색;
+	Void 언어속도(){
+	빨리말한다 } } 
+(부모에게 상속)
+자식 철수 = new 자식();
+철수.머리색; 	부모에게 물려받은 필드
+철수.언어;	부모에게 물려받은 메소드
+
+철수.피부색
+철수.언어속도
+
+함수형 메소드
+stream( ) 매핑할 요소만 정하고 스트림으로 감싸주기
+중복제거 distinct( )
+배열 낮은 순서대로 정렬 sorted( )
+
+1에서 10까지의 제곱값 출력 식
+ IntStream.range(1,11).map(e -> e * e).boxed(). 
+collect(Collectors.toList());
+

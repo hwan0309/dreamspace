@@ -1,0 +1,31 @@
+24.02.14
+DB
+
+SQL
+DB에 있는 필요한 정보를 사용할 수 있도록 도와주는 언어
+사용 방법이 단순
+DBMS에서 사용 가능
+인터프리터
+대소문자 구별x
+
+DML(Data Manipulation Language)
+-테이블의 데이터를 조작하는 기능
+-테이블의 레코드를 CRUD (Create, Retrieve, Update, Delete)
+
+
+DDL(Data Definition Language)
+-DB테이블의 스키마를 정의, 수정하는 기능
+-테이블 생성, 컬럼 추가, 타입변경, 각종 졔약조건 지정 및 수정
+
+
+DCL(Data Control Language)
+-DB나 테이블의 접근 권한이나 CRUD 권한을 정의
+-특정 사용자에게 테이블의 조회권한, 허가/금지 권한 부여.
+
+GRANT(데이터 베이스 객체에 권한부여)
+REVOKE(이미 부여된 데이터베이스 객체 권한을 취소)
+INSERT(데이터베이스에 객체 데이터를 입력)
+DELETE(데이터베이스에 데이터를 삭제)
+UPDATE(데이터베이스 안에 데이터 수정)
+SELECT(데이터베이스 안에 데이터 조회)
+

@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'IBM Plex Sans KR';
+    src: url('../fonts/IBMPlexSansKR-ExtraLight.eot');
+    src: url('../fonts/IBMPlexSansKR-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/IBMPlexSansKR-ExtraLight.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansKR-ExtraLight.woff') format('woff'),
+        url('../fonts/IBMPlexSansKR-ExtraLight.ttf') format('truetype'),
+        url('../fonts/IBMPlexSansKR-ExtraLight.svg#IBMPlexSansKR-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans KR';
+    src: url('../fonts/IBMPlexSansKR-Light.eot');
+    src: url('../fonts/IBMPlexSansKR-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/IBMPlexSansKR-Light.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansKR-Light.woff') format('woff'),
+        url('../fonts/IBMPlexSansKR-Light.ttf') format('truetype'),
+        url('../fonts/IBMPlexSansKR-Light.svg#IBMPlexSansKR-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans KR';
+    src: url('../fonts/IBMPlexSansKR-Bold.eot');
+    src: url('../fonts/IBMPlexSansKR-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/IBMPlexSansKR-Bold.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansKR-Bold.woff') format('woff'),
+        url('../fonts/IBMPlexSansKR-Bold.ttf') format('truetype'),
+        url('../fonts/IBMPlexSansKR-Bold.svg#IBMPlexSansKR-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans KR';
+    src: url('../fonts/IBMPlexSansKR-Medium.eot');
+    src: url('../fonts/IBMPlexSansKR-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/IBMPlexSansKR-Medium.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansKR-Medium.woff') format('woff'),
+        url('../fonts/IBMPlexSansKR-Medium.ttf') format('truetype'),
+        url('../fonts/IBMPlexSansKR-Medium.svg#IBMPlexSansKR-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans KR';
+    src: url('../fonts/IBMPlexSansKR-SemiBold.eot');
+    src: url('../fonts/IBMPlexSansKR-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/IBMPlexSansKR-SemiBold.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansKR-SemiBold.woff') format('woff'),
+        url('../fonts/IBMPlexSansKR-SemiBold.ttf') format('truetype'),
+        url('../fonts/IBMPlexSansKR-SemiBold.svg#IBMPlexSansKR-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans KR';
+    src: url('../fonts/IBMPlexSansKR-Regular.eot');
+    src: url('../fonts/IBMPlexSansKR-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/IBMPlexSansKR-Regular.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansKR-Regular.woff') format('woff'),
+        url('../fonts/IBMPlexSansKR-Regular.ttf') format('truetype'),
+        url('../fonts/IBMPlexSansKR-Regular.svg#IBMPlexSansKR-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans KR';
+    src: url('../fonts/IBMPlexSansKR-Thin.eot');
+    src: url('../fonts/IBMPlexSansKR-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/IBMPlexSansKR-Thin.woff2') format('woff2'),
+        url('../fonts/IBMPlexSansKR-Thin.woff') format('woff'),
+        url('../fonts/IBMPlexSansKR-Thin.ttf') format('truetype'),
+        url('../fonts/IBMPlexSansKR-Thin.svg#IBMPlexSansKR-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

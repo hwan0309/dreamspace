@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ box-sizing:border-box}
+        html,body{
+            height:100%;
+        }
+        .container{
+            width:1200px;
+            max-width:90%;
+            margin:auto;
+            padding:80px;
+        }
+        .text-center{
+            text-align:center;
+        }
+        .btn-register{
+            padding:10px 30px;
+            background:#c55205;
+            color:#fff;
+        }
+        .modal{
+            /* display:none; */
+            width:100%;
+            height:100%;
+            position:fixed;
+            background:rgba(0,0,0,0.5);
+            top:0;
+            left:0;
+            z-index:2;
+        }
+        .close{
+            top:40px;
+            right:40px;
+            position:absolute;
+            color:#fff;
+            font-weight:bold;
+            text-decoration:none;
+            font-size:30px;
+            z-index:100;
+        }
+
+        .bg-white{
+            background-color:#fff;
+            margin-top:100px;
+            border-radius:10px;
+        }
+        ul.signup{
+            list-style-type:none;
+            margin-top:30px;
+        }
+        ul.signup li{
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+        .d-iblock {
+            display: inline-block;
+            width:140px;
+        }
+        input[type=text], input[type=password]{
+            border:1px solid #ddd;
+            padding:10px;
+            width:50%;
+        }
+        input[type=text]:focus, input[type=password]:focus{
+            background-color:#ededed;
+            border:1px solid #999;
+        }
+        .text-right{
+            text-align:right;
+        }
+        .text-center{
+            text-align:center;
+        }
+        @media (max-width:768px){
+            input[type=text], input[type=password]{
+              width:100%;
+           }
+        }   
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>회원가입</h1>
+        <button class="btn-register" onClick="document.getElementById('modal').style.display='block'">Sign Up</button>
+    </div>
+
+    <div class="modal" id="modal">
+        <a href="javascript:void(0)" 
+           class="close" 
+           onClick="document.getElementById('modal').style.display='none'">X</a>
+        <div class="container bg-white">
+            <h2>회원가입</h2>
+            <p>아래 내용을 채워 주세요.</p>
+            <hr />
+            <ul class="signup">
+                <li>
+                    <label class="d-iblock" for="email">이메일</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Email" required>
+                </li>
+                <li>
+                    <label class="d-iblock" for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </li>
+                <li>
+                    <label class="d-iblock" for="repassword">비밀번호 확인</label>
+                    <input type="password" id="repassword" name="repassword" placeholder="Enter Re Password" required>
+                </li>
+                <li class="text-right">
+                    <label>
+                        Remember me
+                       <input type="checkbox" name="remem" value="ok" checked>
+                    </label>   
+                </li>
+                <li>
+                    <p><a href="#" title="개인정보 약관보기">개인정보</a>정책에 동의 합니다.</p>
+                </li>
+                <li class="text-center">
+                    <button type="reset" class="reset">취소</button>
+                    <button type="button" class="submit">전송</button>
+                </li>
+            </ul>
+        </div>   
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>

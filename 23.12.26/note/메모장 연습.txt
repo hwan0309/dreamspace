@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+	<title>메모장으로 만든 html</title>
+  </head>
+  <body>
+	<h1>메모장html</h1>
+	<p>메모장으로 만든 html 입니다.</p>
+  </body>
+</html>

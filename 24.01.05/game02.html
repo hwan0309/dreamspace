@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .container{
+        width:600px;
+        margin:40px auto;
+        text-align:center;
+     }
+      .game{
+        display:inline-block;
+        width:200px;
+        height:200px;
+        margin: 10px 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>그러면 게임을 시작해 보자구!</h3>
+        <p id="result">이겼습니다.</p>
+        <div class="game"><strong>나</strong><br><span id="me">가위</span></div>
+        <div class="game"><strong>컴퓨터</strong><br><span id="com">보</span></div>
+        <br />
+        <button>가위</button>
+        <button>바위</button>
+        <button>보</button>
+    </div>
+    <script>
+    const member=["0", "1", "2"];
+    //난수 2까지 가위 바위 보
+
+    const myGame = event.target.textContent === '가위' ? 'scissors'
+    : event.target.textcontent === '바위' ? 'rock'
+    :'paper';
+
+    if(myGame === 'scissors') {
+        if(comGame === 'scissors') {
+        console.log("무승부");
+    }else if(comGame === 'rock') {
+        console.log("패배");
+    }else if(comGame === 'paper') {
+        console.log("승리");
+    }
+} else if(myGame === 'rock') {
+    if(comGame ==='scissors') {
+        console.log("승리");
+    }else if(comGame === 'rock') {
+        console.log("비김");
+    }else if(comGame === 'paper') {
+        console.log("패배");
+    }
+} else if(myGame === 'paper') {
+    if(comGame === 'scissors') {
+        console.log("패배");
+    } else if(myGame === 'scissors') {
+        console.log("승리");
+    } else if(myGame === 'paper') {
+        console.log("비김");
+    }
+}
+
+    
+       
+    </script>
+</body>
+</html>

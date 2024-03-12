@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        ul{
+            list-style:circle;
+           }
+        ul.main-nav{
+            width:600px;
+            margin:30px auto;
+            justify-content:space-between;
+        }
+        ul.main-nav>li{
+            position:relative;
+        }
+       
+        ul.main-nav>li>a,
+         ul.sub-nav>li>a{
+            font-size:40px;
+            text-decoration:none;
+            border:1px solid #333;
+        }
+        ul.main-nav>li>a:hover{
+            background:#ddd;
+        }
+        .sub-nav{
+            top:27px;
+            display:none;
+        }
+        .sub-nav li{
+            margin-top:11px;
+        }
+       .a{
+        font-size:40px;
+        }
+        .joke{
+            size:80px;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.main-nav>li').hover(function(){
+                $(this).find('.sub-nav').stop().slideToggle();
+                
+            })
+            $(".a").click(function(){
+                $(".joke").slideToggle();
+
+            })
+        });
+    </script>
+</head>
+<body>
+    <ul class="main-nav">
+        <li><a href="#">튀김</a></li>
+        <li><a href="#">구이</a>
+            <ul class="sub-nav">
+        <li><a href="#">닭</a></li>
+        <li><a href="#">오리</a></li>
+        <li><a href="#">돼지</a></li>
+            </ul>
+        </li>
+        <li><a href="#">전골</a></li>
+        <li><a href="#">술</a>
+            <ul class="sub-nav">
+                <li><a href="#">참이슬</a></li>
+                <li><a href="#">처음처럼</a></li>
+                <li><a href="#">진로</a></li>
+                    </ul>
+        </li>
+        <li><a href="#">음료</a></li>
+    </ul>
+
+    <button class="a">메롱</button>
+
+    <div class="joke">
+        <img src="../24.01.18/KakaoTalk_20240118_163930669.png" >
+        <img src="../24.01.18/KakaoTalk_20240118_163930669_01.png">
+    </div>
+   
+
+    
+    
+
+    
+</body>
+</html>

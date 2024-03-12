@@ -1,0 +1,9 @@
+24.01.26
+java
+
+작은타입에서 큰 타입으로 -> 자동타입변환
+byte -> int  int -> double
+
+자동타입변환 promotion
+강제타입변환 casting
+

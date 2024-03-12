@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .size{
+            font-weight:bold;
+            font-size:5em;
+
+        }
+        .blue{
+            color:blue;
+        }
+        .red{
+            color:red;
+        }
+    </style>
+    <script src="../24.01.18/js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.size').click(function(){
+                $('p').removeClass('blue').removeClass('red');
+                $('p').toggleClass('box');                   
+        })
+        $('.blue').click(function(){
+            if($('p').hasClass('box')){
+                alert("큰글씨입니다.");
+            }
+                $('p').removeClass('red').addClass('blue');                   
+        })
+        $('.red').click(function(){
+                $('p').removeClass('blue').addClass('red');                   
+        })
+        })//jquery
+      
+    </script>
+</head>
+<body>
+    <button class="size">누르시오</button>
+    <button class="blue">파랑색</button>
+    <button class="red">빨강색</button>
+    <p>안녕하세요</p>
+
+</body>
+</html>

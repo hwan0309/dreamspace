@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container{
+            width:600px;
+            padding:40px;
+            box-sizing:border-box;
+            background:#efefef;
+            margin:40px auto;
+            box-shadow:0 0 15px 0 rgba(0,0,0,0.2);
+            border-radius:10px;
+
+        }
+        h1{
+            margin-top:30px;
+            margin-bottom:15px;
+            text-align:center;
+
+        }
+        label{
+            display:inline-block;
+            width:70px;
+            padding-right:15px;
+            text-align:right;
+        }
+        ul{
+            list-style-type:none;
+
+        }
+        li{
+            line-height:30px;
+        }
+        input[type=text],input[type=password]{
+            width:60%;
+            padding:5px;
+            border-radius:5px;
+        }
+        .text-center{
+            text-align:center;
+            margin-top:10px;
+        }
+        button{
+            padding:5px 10px;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <div class="container">
+        <form name="registerform" action="JS ex2.html" method="post" onsubmit="return test()">
+            <ul>
+                <li>
+                    <label>이름</label>
+                    <input type="text" name="userName">
+                </li>
+                <li>
+                    <label>비밀번호</label>
+                    <input type="password" name="userPass">
+                </li>
+                <li>
+                    <label>이메일</label>
+                    <input type="password" name="userEmail">
+                </li>
+                <li class="text-center">
+                    <button type="submit">전  송</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <script>
+        function test(){
+            const form = document.registerform;
+            if(form.userName.value =="");
+            alert("이름을 입력하세요.");
+            return false;
+        }
+    </script>
+    
+</body>
+</html>

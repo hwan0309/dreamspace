@@ -1,0 +1,71 @@
+24.02.28
+DB
+
+Spread sheets Database
+exal창에 저장 되며 저장된걸 불러오는 형식
+
+DISTINCT
+SELECT DISTINCT column_name FROM table_name
+테이블에서 선택한 컬럼을 중복제거후 출력
+
+COUNT
+SELECT COUNT column_name FROM talbe_name
+테이블에서 선택한 컬럼의 갯수 출력
+SELECT COUNT (DISTINCTcolumn_name) FROM talbe_name
+테이블에서 선택한 컬름의 갯수를 중복 제거 후 출력
+
+WHERE
+SELECT WHERE 
+WHERE column_name = '?' 
+컬럼에서 선택 한 ? 문자 출력
+
+응용 ex)
+SELECT COUNT(title) FROM table_name 
+WHERE column_name AND column_name = '?'
+선택한 테이블에서 컬럼의 제목의 갯수를 출력
+
+*는 전체를 출력하겠다는 의미
+
+259 Ipoh Drive의 주소의 전화번호를 출력하라
+SELECT phone FROM address
+WHERE address = '259 Ipoh Drive';
+
+ORDER BY 
+오름차순, 내림차순 정렬 실행 구문은 맨 끝에 위치
+SELECT column_1, column_2 FROM table
+ORDER BY column_1 ASC(오름차순)/DESC(내림차순)
+
+LIMIT 입력한 숫자만큼만 출력 제일 마지막에 실행됨
+SELECT * FROM payment
+ORDER BY payment_date DESC
+LIMIT 5;
+
+BETWEEN
+0000 >= ????? <= 0000
+
+IN 선택 된 것 만큼만 출력
+SELECT * FROM payment
+WHERE amount IN (0.99, 1.98, 1.99)
+
+
+NOT IN 선택된 것 만큼 빼고 출력
+SELECT * FROM payment
+WHERE amount NOT IN (0.99, 1.98, 1.99)
+
+LIKE %, _ 사용
+LIKE 대소문자 구별 후 출력
+ILIKE 대소문자 구별 없이 출력
+
+집계함수
+MIN, MAX, (최소값, 최대값) AVG(반올림), SUM(총합계)
+SELECT MAX(replacement_cost), MIN(replacement_cost)FROM film; 
+두개를 한번에 사용가능
+
+SELECT ROUND(AVG(replacement_cost) ,2)FROM film;
+소수점 입력값에 따라 설정가능, 반올림 가능
+
+GROUP BY 
+
+
+
+

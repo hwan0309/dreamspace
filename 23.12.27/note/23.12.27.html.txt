@@ -1,0 +1,45 @@
+html
+cd경로: 디렉토리 이동명령 // 현재 디렉토리 표시
+dir (ls): 디렉토리 목록표시
+copy원본파일 대상위치: 파일복사
+move원본파일 대상위치: 파일이동//이름변경
+mkdir폴더이름: 폴더생성
+rmdir /s /q 폴더이름: 폴더 및 파일 삭제
+type파일이름: 파일상태보기
+ipconfig: ip구성정보확인
+hostname: 호스트이름 확인
+find문자열파일이름: 파일검색
+help: 도움말보기
+a href="링크주소": 링크삽입기능
+&nbsp; 띄어쓰기(문자표현)
+&#160; 띄어쓰기 (숫자표현)
+&amp; 앤드(문자표현)
+&#38; 앤드(숫자표현)
+&lt;  <표현
+&gt; >표현
+&copy; copyright표시 
+
+<b> - Bold text  글자를 두껍게 (현재사용x)
+<strong> - Important text 글자를 강조, 객관적인 강조
+<i> - Italic text 이테리체 글자 (현재사용x)
+<em> - Emphasized text 글자를 강조, 주관적인 강조
+<mark> - Marked text 형광팬 그어짐
+<small> - Smaller text
+<del> - Deleted text inline, block두 가지 형태로 사용가능 (글자 위 선그어짐)
+<ins> - Inserted text   inline, block두 가지 형태로 사용가능 (글자 밑 밑줄)
+<sub> - Subscript text  아래첨자 텍스트
+<sup> - Superscript text 위첨자 텍스트
+
+<!--> html 주석 
+// 일반적인 언어 주석
+
+q(인라인테그)
+blockquote(블록테그)
+cite 요소로 쓰일때 사용, 작품등을 언급할때 사용됨
+속성으로 쓰일때는 이용된출처(URL)
+
+<q> "" 표시
+
+<abbr> 약어 표시,title 속성으로 전체 제목을 지정
+<address> 주소 표시
+<bdo> 읽어지는 순서 뒤집을 수 있음

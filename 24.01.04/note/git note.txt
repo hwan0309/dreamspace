@@ -1,0 +1,27 @@
+24.01.04 
+git
+git config --global user.name "hwan"
+git config --global user.email "hwan"
+
+기본 브랜치명 설정
+git config --global inint.defaultBranch main
+
+git init
+git status - 상황확인
+git add "파일명" - 폴더내의 모든 파일을 등록(git add .)
+git commit (리눅스 메모장)
+git commit -m(다이렉트로 넣을때)
+
+-입력시작 : i 명령어 입력 모드에서 텍스트 입력모드 전환
+-입력종료 : esc 텍스트 입력모드로 전환
+-저장없이 종료 : :q
+-저장없이 강제종료 : :q!
+-저장하고 종료  : :wq
+-위로 스크롤 : k
+-아래로 스크롤 : j
+
+git으로 관리하지 않는 파일을 관리시: .gitignore
+gitignore 사용법
+-최상위 폴더 / 파일이름. 확장자
+-확장자가 .exe모든파일 : *.exe
+-특별히 지정할 파일: 파일이름.확장자
